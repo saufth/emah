@@ -1,0 +1,129 @@
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply
+      /* Typography */
+      font-supermolot-regular
+      /* Interactivity */
+      scroll-smooth;
+  }
+
+  *, *::before, *::after {
+    @apply
+      /* Layout */
+      box-border
+      /* Spacing */
+      p-0
+      m-0;
+  }
+
+  *:focus {
+    @apply
+      /* Border */
+      outline-none;
+  }
+
+  a {
+    @apply
+      /* Typography */
+      text-inherit
+      no-underline;
+  }
+
+  h1 {
+    @apply
+      /* Typography */
+      font-supermolot-light
+      font-semibold
+      tracking-tighter
+      text-8xl;
+  }
+
+  /* Cairo Fonts */
+
+  @font-face {
+    font-family: Cairo Extra Light;
+    src: url(../../public/fonts/cairo/extra-light.ttf);
+  }
+
+  @font-face {
+    font-family: Cairo Light;
+    src: url(../../public/fonts/cairo/light.ttf);
+  }
+
+  @font-face {
+    font-family: Cairo Regular;
+    src: url(../../public/fonts/cairo/regular.ttf);
+  }
+
+  @font-face {
+    font-family: Cairo Medium;
+    src: url(../../public/fonts/cairo/medium.ttf);
+  }
+
+  @font-face {
+    font-family: Cairo Semi Bold;
+    src: url(../../public/fonts/cairo/semi-bold.ttf);
+  }
+
+  @font-face {
+    font-family: Cairo Bold;
+    src: url(../../public/fonts/cairo/bold.ttf);
+  }
+
+  @font-face {
+    font-family: Cairo Black;
+    src: url(../../public/fonts/cairo/black.ttf);
+  }
+
+  /* TT Supermolot Neue Fonts */
+
+  @font-face {
+    font-family: TT Supermolot Neue Thin;
+    src: url(../../public/fonts/tt-supermolot-neue/thin.ttf);
+  }
+
+  @font-face {
+    font-family: TT Supermolot Neue Extra Light;
+    src: url(../../public/fonts/tt-supermolot-neue/extra-light.ttf);
+  }
+
+  @font-face {
+    font-family: TT Supermolot Neue Light;
+    src: url(../../public/fonts/tt-supermolot-neue/light.ttf);
+  }
+
+  @font-face {
+    font-family: TT Supermolot Neue Regular;
+    src: url(../../public/fonts/tt-supermolot-neue/regular.ttf);
+  }
+
+  @font-face {
+    font-family: TT Supermolot Neue Medium;
+    src: url(../../public/fonts/tt-supermolot-neue/medium.ttf);
+  }
+
+  @font-face {
+    font-family: TT Supermolot Neue Demibold;
+    src: url(../../public/fonts/tt-supermolot-neue/demibold.ttf);
+  }
+
+  @font-face {
+    font-family: TT Supermolot Neue Bold;
+    src: url(../../public/fonts/tt-supermolot-neue/bold.ttf);
+  }
+
+  @font-face {
+    font-family: TT Supermolot Neue Bold;
+    src: url(../../public/fonts/tt-supermolot-neue/bold.ttf);
+  }
+
+  @font-face {
+    font-family: TT Supermolot Neue Black;
+    src: url(../../public/fonts/tt-supermolot-neue/black.ttf);
+  }
+}

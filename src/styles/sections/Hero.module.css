@@ -1,0 +1,24 @@
+.hero {
+  @apply
+    /* Sizing */
+    w-full
+    h-screen
+    /* Layout */
+    overflow-hidden;
+}
+
+.logotype {
+  @apply
+    /* Sizing */
+    w-[280px] sm:w-auto
+    h-[82px] sm:h-auto;
+}
+
+.message {
+  @apply
+    /* Spacing */
+    mt-3 sm:mt-4
+    /* Typography */
+    font-cairo-medium
+    text-sm sm:text-lg;
+}
