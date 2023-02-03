@@ -1,0 +1,55 @@
+.section {
+  @apply
+    /* Sizing */
+    max-w-3xl
+    /* Spacing */
+    mt-16
+    mx-auto
+    /* Typography */
+    text-emah-dark;
+}
+
+.form {
+  @apply
+    /* Spacing */
+    space-y-8;
+}
+
+.input {
+  @apply
+    /* Sizing */
+    w-full
+    /* Spacing */
+    px-4 py-3
+    /* Typography */
+    font-proxima-soft-medium
+    /* Baxkground */
+    bg-zinc-200
+    /* Border */
+    rounded-3xl
+    /* Interactivity */
+    resize-none;
+}
+
+.submit {
+  @apply
+    /* Sizing */
+    w-64
+    h-12
+    /* Typography */
+    font-proxima-soft-medium
+    text-white
+    /* Background */
+    bg-emah-blue
+    /* Border */
+    rounded-3xl;
+}
+
+.options {
+  @apply
+    /* Spacing */
+    pt-6
+    /* Flexbox & Grid */
+    flex
+    justify-center;
+}

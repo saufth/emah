@@ -1,0 +1,87 @@
+.hero {
+  @apply
+    /* Sizing */
+    max-w-7xl
+    h-auto md:h-3xl
+    /* Spacing */
+    mb-36 md:mb-24
+    mx-auto
+    /* Flexbox & Grid */
+    flex
+    flex-col-reverse md:flex-row
+    gap-x-5;
+}
+
+.heroContent {
+  @apply
+    /* Sizing */
+    w-full md:w-[55%]
+    h-full
+    /* Flexbox & Grid */
+    flex
+    flex-col
+    justify-center
+    gap-y-12;
+}
+
+.heroHeader {
+  @apply
+    /* Spacing */
+    space-y-6 
+    /* Typography */
+    text-center md:text-left;
+}
+
+.textHighlighted {
+  @apply
+    /* Typography */
+    text-emah-blue;
+}
+
+.heroDescription {
+  @apply
+    /* Typography */
+    text-xl
+    text-emah-gray;
+}
+
+.heroOptions {
+  @apply
+    /* Flexbox & Grid */
+    flex
+    justify-center md:justify-start
+    items-center
+    gap-6;
+}
+
+.heroLink {
+  @apply
+    /* Layout */
+    hidden md:block;
+}
+
+.heroImageWrap {
+  @apply
+    /* Sizing */
+    w-full md:w-[45%]
+    /* Spacing */
+    px-16 md:px-0
+    my-16 md:my-0
+    /* Flexbox & Grid */
+    grid
+    place-content-center;
+}
+
+.heroImage {
+  @apply
+    /* Layout */
+    overflow-hidden
+    /* Border */
+    rounded-full;
+}
+
+.about {
+  @apply
+    /* Spacing */
+    mt-44 md:mt-24;
+}

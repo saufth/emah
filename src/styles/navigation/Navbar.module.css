@@ -1,0 +1,72 @@
+.navbar {
+  @apply
+    /* Sizing */
+    max-w-[1920px]
+    h-[54px] md:h-[57px]
+    /* Spacing */
+    px-5%
+    mx-auto
+    /* Layout */
+    fixed
+    top-0
+    left-0
+    right-0
+    z-70
+    /* Flexbox & Grid */
+    flex
+    justify-between
+    items-center
+    /* Background */
+    bg-white/70
+    backdrop-filter
+    backdrop-blur;
+}
+
+.options {
+  @apply
+    /* Flexbox & Grid */
+    flex
+    items-center
+    gap-x-4
+    md:gap-x-8;
+}
+
+.nav {
+  @apply
+    /* Layout */
+    hidden md:block;
+}
+
+.logo {
+  @apply
+    /* Flexbox & Grid */
+    flex
+    items-center
+    gap-x-2.5 md:gap-x-3;
+}
+
+.logomark {
+  @apply
+    /* Sizing */
+    w-10 md:w-11;
+}
+
+.slogan {
+  @apply
+    /* Typography */
+    font-supermolot-medium
+    text-md
+    md:text-base
+    text-emah-gray;
+}
+
+.close {
+  @apply
+    /* Typography */
+    text-2xl
+    px-1.5
+    leading-none
+    text-emah-dark
+    /* Interactiviry */
+    cursor-pointer;
+}

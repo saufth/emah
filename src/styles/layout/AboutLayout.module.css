@@ -1,0 +1,38 @@
+.scrollable {
+  @apply
+    /* Sizing */
+    w-full
+    /* Spacing */
+    px-5%
+    /* Layout */
+    fixed
+    top-0
+    left-0
+    overflow-hidden
+    /* Interactivity */
+    will-change-transform;
+}
+
+.imageContainer {
+  @apply
+    /* Sizing */
+    max-w-3xl
+    h-lg sm:h-md
+    /* Spacing */
+    mx-4 md:mx-auto
+    /* Layout */
+    fixed
+    top-[640px] md:top-[560px]
+    left-0
+    right-0
+    z-10
+    overflow-hidden
+    /* Background*/
+    bg-about-hero
+    bg-cover
+    bg-center
+    /* Border */
+    rounded-6xl
+    /* Interactivity */
+    will-change-transform;
+}

@@ -1,0 +1,11 @@
+.nav {
+  @apply
+  /* Flexbox & Grid */
+  flex
+  items-center
+  gap-x-5 md:gap-x-8
+  /* Typography */
+  text-sm md:text-md
+  leading-none
+  text-emah-gray;
+}

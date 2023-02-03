@@ -1,0 +1,48 @@
+.nav {
+  @apply
+    /* Sizing */
+    w-full
+    h-screen
+    /* Layout */
+    fixed
+    top-0
+    left-0
+    z-60
+    overflow-hidden
+    /* Flexbox & Grid */
+    grid
+    place-content-center
+    gap-y-12 md:gap-y-9
+    /* Typography */
+    text-sm md:text-base
+    text-center
+    text-emah-gray;
+}
+
+.option {
+  @apply
+    /* Typography */
+    font-proxima-soft-bold
+    text-5xl md:text-4xl lg:text-5xl
+    text-emah-dark;
+}
+
+.action {
+  @apply
+    /* Flexbox & grid */
+    flex
+    justify-center;
+}
+
+.background {
+  @apply
+    /* Sizing */
+    w-full
+    h-screen
+    /* Layout */
+    fixed
+    top-0
+    z-50
+    /* Background */
+    bg-white;
+}

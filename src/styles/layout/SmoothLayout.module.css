@@ -1,0 +1,14 @@
+.scrollable {
+  @apply
+    /* Sizing */
+    w-full
+    /* Spacing */
+    px-5%
+    /* Layout */
+    fixed
+    top-0
+    left-0
+    overflow-hidden
+    /* Interactivity */
+    will-change-transform;
+}

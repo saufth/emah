@@ -1,0 +1,22 @@
+.about {
+  @apply
+    /* Spacing */
+    mt-[1196px] md:mt-[1024px];
+}
+.imageContainer {
+  @apply
+    /* Sizing */
+    max-w-3xl
+    h-lg sm:h-md
+    /* Spacing */
+    my-24 md:my-36
+    mx-auto
+    /* Layout */
+    overflow-hidden
+    /* Background*/
+    bg-about-hero
+    bg-cover
+    bg-center
+    /* Border */
+    rounded-6xl;
+}

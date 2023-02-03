@@ -1,0 +1,36 @@
+.header {
+  @apply
+    /* Sizing */
+    max-w-3xl
+    /* Spacing */
+    mx-auto
+    mt-48
+    space-y-2
+    /* Typography */
+    text-left
+    tracking-normal;
+}
+
+.header {
+  @apply
+    /* Sizing */
+    max-w-3xl
+    /* Spacing */
+    mx-auto
+    mt-44;
+}
+
+.heading {
+  @apply
+    /* Typography */
+    font-proxima-soft-medium
+    text-base md:text-lg
+    text-emah-gray;
+}
+
+.description {
+  @apply
+    /* Typography */
+    font-proxima-soft-semibold
+    text-5xl md:text-6xl;
+}
