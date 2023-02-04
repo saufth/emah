@@ -14,7 +14,7 @@ const WhyPage = () => {
       <main>
         <section>
           <div className={styles.content}>
-            <h1>Problemática y razón de ser</h1>
+            <h1>Razón de ser</h1>
 
             <p>
               En el mercado podemos ver muchas historias de éxito, pero también historias de
