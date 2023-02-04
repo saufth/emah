@@ -21,6 +21,10 @@ const navConfig: LinkProps[] = [
     href: '/services'
   },
   {
+    children: 'Reason why',
+    href: '/why'
+  },
+  {
     children: 'Contact',
     href: '/contact'
   }

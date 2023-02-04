@@ -41,7 +41,7 @@ const aboutConfig: AboutProps = {
         'Back-end development',
         'Mobile apps',
         'Landing page',
-        'Consultoria y asesoria'
+        'Consultoría y asesoría'
       ],
       image: 'development'
     }
@@ -58,7 +58,7 @@ const ServicesPage = () => {
       <main>
         <Header>
           Los mejores resultados se logran cuando la ejecución del branding
-          y elmarketing empujan hacia el mismo destino.
+          y el marketing empujan hacia el mismo destino.
         </Header>
         <About {...aboutConfig} />
       </main>

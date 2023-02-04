@@ -87,6 +87,11 @@ const Menu = ({ isOpen, action }: MenuProps) => {
           </NextLink>
         </div>
         <div className={styles.option} onClick={action}>
+          <NextLink href='/why'>
+            Reason why
+          </NextLink>
+        </div>
+        <div className={styles.option} onClick={action}>
           <SocialNav />
         </div>
         <div className={styles.action} onClick={action}>

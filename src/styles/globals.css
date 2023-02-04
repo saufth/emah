@@ -41,7 +41,7 @@
   p {
     @apply
       /* Typography */
-      text-md md:text-base
+      text-md md:text-base lg:text-lg
       text-emah-gray;
   }
 
