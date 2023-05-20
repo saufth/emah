@@ -68,7 +68,7 @@ const HomePage = () => {
           <div className={styles.heroImageWrap}>
             <Image
               alt='emah marketing solutions'
-              src='/images/sections/hero/home.png'
+              src='/images/sections/hero/home.jpg'
               width={640}
               height={640}
               className={styles.heroImage}

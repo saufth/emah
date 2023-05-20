@@ -30,8 +30,8 @@ const Navbar = () => {
             <div className={styles.logo}>
               <Image
                 alt='emah logomark'
-                src='/images/logotype/logomark.svg'
-                width={64}
+                src='/images/logomark.svg'
+                width={59}
                 height={48}
                 priority
                 className={styles.logomark}

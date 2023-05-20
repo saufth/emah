@@ -5,7 +5,7 @@
   "homepage": "https://emah.mx/",
   "engines": {
     "node": "18.x",
-    "pnpm": "7.x",
+    "pnpm": "8.x",
     "yarn": "please-use-pnpm",
     "npm": "please-use-pnpm"
   },

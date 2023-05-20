@@ -26,7 +26,7 @@ const keywords = String([
   'desarrollo de aplicaciones'
 ])
 /** The social media image URL */
-const socialImageUrl = `${baseUrl}images/emah.jpg`
+const socialImageUrl = `${baseUrl}cover.jpg`
 /** Twitter account */
 const twitter = '@emah'
 
@@ -39,7 +39,7 @@ export default function AppLayout ({ children } : ParentProps) {
         <title>Expert Marketing Associates & Hacks – emah – Endless posibilities</title>
         <link rel='icon' href='/favicon.ico' />
         <link rel='canonical' href={baseUrl} />
-        <link rel='apple-touch-icon' href='/images/apple-touch-icon.png' />
+        <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
         <meta name='theme-color' content='#FF6700' />
         <meta name='description' content={description} />
         <meta name='keywords' content={keywords} />
