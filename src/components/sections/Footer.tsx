@@ -24,8 +24,8 @@ const Footer = () => {
       </div> */}
       <div className={styles.foot}>
         <div className={styles.footMail}>
-          <NextLink href='mailto:info@emah.mx' target='_blank' rel='noreferrer'>
-            info@emah.mx
+          <NextLink href='mailto:contacto@emah.mx' target='_blank' rel='noreferrer'>
+            contacto@emah.mx
           </NextLink>
         </div>
         <SocialNav />
