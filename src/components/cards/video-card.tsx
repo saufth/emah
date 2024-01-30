@@ -19,7 +19,7 @@ export default function Video () {
   return (
     <>
       {isVideo &&
-        <div className='fixed sm:right-6 lg:right-12 bottom-0 sm:bottom-6 lg:bottom-12 w-full sm:w-xs h-16 sm:h-auto border-t sm:border bg-white dark:bg-black overflow-hidden sm:rounded-[14px] z-10 flex items-center'>
+        <div className='fixed sm:right-4 xl:right-12 bottom-0 sm:bottom-4 xl:bottom-12 w-full sm:w-xs h-16 sm:h-auto border-t sm:border bg-white dark:bg-black overflow-hidden sm:rounded-[14px] z-10 flex items-center'>
           <video
             className='w-auto sm:w-full sm:h-auto h-full sm:aspect-video relative'
             width={1920}
@@ -40,7 +40,7 @@ export default function Video () {
             <Button size='sm' variant='link' className='sm:text-white' onClick={handleDimissVideo}>
               Descartar
             </Button>
-            <Button size='sm' color='primary' className='sm:bg-white sm:text-black rounded-sm px-2' onClick={handleFullscreenVideo}>
+            <Button size='sm' color='primary' className='sm:bg-white sm:text-black rounded-sm py-0.5 px-2.5' onClick={handleFullscreenVideo}>
               Ver video
             </Button>
           </div>

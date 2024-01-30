@@ -8,37 +8,47 @@ import { cn } from '@/lib/utils'
 import { benefist, howWeMake } from '@/config/organization'
 import { siteConfig } from '@/config/site'
 import { services } from '@/config/services'
+import Link from 'next/link'
 
 export default function IndexPage () {
   return (
     <>
       <div className='dark:bg-gradient-to-b dark:from-black dark:via-zing-950 dark:to-background relative z-10'>
-        <section className='mt-spacing-6 pb-spacing-8 relative z-10'>
+        <section className='mt-spacing-4 pb-spacing-8 relative z-10'>
           <div className='container mx-auto flex flex-col items-center gap-y-8'>
-            <Badge className='mt-spacing-6 dark:border-zinc-600' variant='secondary'>
+            <Badge className='mt-spacing-6' variant='secondary'>
               <div className='flex gap-x-1 items-center'>
-                <span className='text-emah text-lg lg:text-xl lg:font-medium'>
+                <span className='text-emah text-sm lg:text-base lg:font-medium'>
                   <span>-mkt</span>+hacks<span> =</span>
                 </span>
-                <Icons.Proposal className='w-5 lg:w-6 h-auto fill-emah' />
+                <Icons.Proposal className='w-4 lg:w-5 h-auto fill-emah' />
               </div>
             </Badge>
-            <div className='max-w-md sm:max-w-xl lg:max-w-5xl font-cairo text-center space-y-8'>
+            <div className='max-w-md sm:max-w-xl lg:max-w-5xl font-cairo text-center'>
               <h1 className='relative f-display-1'>
                 <span className='relative'>
-                  <Icons.Doodle className='w-auto h-20 sm:h-28 lg:h-32 fill-emah absolute top-1 lg:top-2 my-auto -left-9 sm:-left-16 lg:-left-20 -z-10' />
-                  <span className='text-gradient px-px text-balanced'>
+                  <Icons.Doodle className='w-auto h-20 sm:h-28 lg:h-32 fill-emah absolute top-1 lg:top-2 my-auto -left-9 sm:-left-16 lg:-left-16 -z-10' />
+                  <span className='text-gradient'>
                     {siteConfig.slogan}
                   </span>
                 </span>
               </h1>
-              <p className='f-subhead-1 text-muted-foreground text-balanced'>
-                Impulsamos a emprendedores y empresarios a consolidar su modelo de negocio, ofreciendo productos intangibles de alto valor agregado para sus clientes.
+              <p className='f-subhead-1 text-muted-foreground text-balanced mt-spacing-4'>
+                Impulsamos a emprendedores y empresarios a consolidar su modelo de negocio, ofreciendo <b>productos intangibles de alto valor agregado</b> para sus clientes.
               </p>
             </div>
-            <Button className='mt-2 sm:mt-4' color='primary' size='full'>
-              Contáctanos
-            </Button>
+            <div className='w-full justify-center mt-2 sm:mt-4 flex flex-col sm:flex-row gap-4'>
+              <Button size='full' asChild>
+                <Link href='/contacto'>
+                  Contáctanos
+                </Link>
+              </Button>
+              <Button variant='ghost' size='full' asChild>
+                <Link href='/nosotros'>
+                  Conócenos
+                </Link>
+              </Button>
+            </div>
           </div>
         </section>
         <section className='container-sm pb-spacing-7 relative z-10'>

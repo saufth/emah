@@ -8,14 +8,19 @@ import {
 
 export default function SiteFooter () {
   return (
-    <footer className='mt-spacing-7 border-t '>
-      <div className='container py-spacing-4 lg:flex lg:justify-between space-y-4 lg:space-y-0'>
-        <nav className='flex items-center gap-x-4'>
-          <Link href='/'>
-            <Icons.Logomark className='w-auto h-8 fill-primary first:[&>path]:fill-emah' />
-            <span className='sr-only'>{siteConfig.name}</span>
-          </Link>
-          <ul className='flex items-center gap-x-3'>
+    <footer className='mt-spacing-7 border-t pb-spacing-8 sm:pb-spacing-9 pt-spacing-3'>
+      <div className='container-sm sm:flex sm:justify-between'>
+        <nav className='flex flex-col gap-4'>
+          <div className='flex gap-x-2'>
+            <Link href='/'>
+              <Icons.Logomark className='w-auto h-7 sm:h-8 fill-primary first:[&>path]:fill-emah' />
+              <span className='sr-only'>{siteConfig.name}</span>
+            </Link>
+            <span className='text-lg sm:text-xl text-bold'>
+              {`${siteConfig.name.toLocaleLowerCase()} © ${new Date().getFullYear()}`}
+            </span>
+          </div>
+          <ul className='flex flex-col gap-3'>
             {siteNav.map((navItem, key) => (
               <li key={key}>
                 <Link className='text-base xl:text-lg' href={navItem.href}>
@@ -25,17 +30,10 @@ export default function SiteFooter () {
             ))}
           </ul>
         </nav>
-        <div>
-          <Link className='text-base xl:text-lg' href={`mailto:${contactEmail}`}>
+        <div className='mt-spacing-7 sm:mt-0'>
+          <Link className='text-base xl:text-lg underline' href={`mailto:${contactEmail}`}>
             {contactEmail}
           </Link>
-        </div>
-      </div>
-      <div>
-        <div className='container mt-spacing-9 pb-spacing-4'>
-          <span className='text-muted-foreground pt-spacing-9'>
-            {`${siteConfig.name} © ${new Date().getFullYear()}`}
-          </span>
         </div>
       </div>
     </footer>
