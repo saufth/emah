@@ -29,8 +29,8 @@ export default function SiteHeader () {
     <>
       <header
         className={cn(
-          'w-full sticky top-0 left-0 z-40 border-b transition-colors duration-300 bg-background/0 backdrop-filter backdrop-saturate-150 backdrop-blur-lg',
-          isOnTop && 'border-transparent'
+          'w-full sticky top-0 left-0 z-40 border-b transition-colors duration-300 bg-background/0 backdrop-filter backdrop-saturate-150 backdrop-blur-lg transition-color',
+          (isOnTop || isMenuOpen) && 'border-transparent'
         )}
       >
         <nav className='relative' aria-label='Emah Directory'>
@@ -70,14 +70,15 @@ export default function SiteHeader () {
                       )
                 ))}
                 <div className='block lg:hidden'>
-                  <div className='block lg:hidden w-6 h-4 relative [&>span]:transition-all' onClick={toggleMenu}>
-                    <span className={cn('w-full h-[1.5px] bg-primary absolute top-0 left-0', isMenuOpen && 'inset-0 m-auto rotate-45')} />
-                    <span className={cn('w-full h-[1.5px] bg-primary absolute top-0 bottom-0 my-auto', isMenuOpen && 'opacity-0')} />
-                    <span className={cn('w-full h-[1.5px] bg-primary absolute bottom-0 left-0', isMenuOpen && 'inset-0 m-auto -rotate-45')} />
+                  <div className='block lg:hidden w-8 h-2.5 relative [&>span]:transition-all [&>span]:duration-300' onClick={toggleMenu}>
+                    <span className={cn('w-4/5 h-0.5 bg-primary absolute top-0 left-0', isMenuOpen && 'bg-emah inset-0 m-auto rotate-45')} />
+                    <span className={cn('w-4/5 h-0.5 bg-primary absolute bottom-0 right-0', isMenuOpen && 'bg-emah inset-0 m-auto -rotate-45')} />
                     <span className='sr-only'>Toggle menu</span>
                   </div>
                 </div>
-                <ModeToggle />
+                <div className='hidden lg:block'>
+                  <ModeToggle />
+                </div>
               </div>
             </div>
           </div>
@@ -98,13 +99,16 @@ export default function SiteHeader () {
             </Button>
           ))}
         </nav>
-        <div className='container pb-8'>
-          <div className='text-sm sm:text-base text-muted-foreground'>
-            Correo electrónico
+        <div className='container pb-8 flex justify-between items-end'>
+          <div>
+            <div className='text-sm sm:text-base text-muted-foreground'>
+              Correo electrónico
+            </div>
+            <Link className='text-base xl:text-lg' href={`mailto:${contactEmail}`} onClick={() => setIsMenuOpen(false)}>
+              {contactEmail}
+            </Link>
           </div>
-          <Link className='text-base xl:text-lg' href={`mailto:${contactEmail}`} onClick={() => setIsMenuOpen(false)}>
-            {contactEmail}
-          </Link>
+          <ModeToggle />
         </div>
       </div>
     </>

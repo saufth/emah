@@ -16,9 +16,8 @@ export function ModeToggle () {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
-          variant='link'
-          size='icon'
-          className='group ring-0.5 focus-visible:ring-0.5'
+          variant='ghost'
+          className='group ring-0.5 focus-visible:ring-0.5 h-10 px-3 lg:px-2'
         >
           <Icons.Sun className='w-4 lg:w-5 h-auto rotate-0 scale-100 transition-all duration-500 dark:-rotate-90 dark:scale-0 fill-primary' />
           <Icons.Moon className='w-4 lg:w-5 h-auto absolute rotate-90 scale-0 transition-all duration-500 dark:rotate-0 dark:scale-100 fill-primary' />
