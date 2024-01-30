@@ -1,4 +1,3 @@
-import dynamic from 'next/dynamic'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
@@ -8,8 +7,7 @@ import { benefist, howWeMake } from '@/config/organization'
 import { cn } from '@/lib/utils'
 import { siteConfig } from '@/config/site'
 import { services } from '@/config/services'
-
-const Meteors = dynamic(() => import('@/components/meteors'), { ssr: false })
+import Meteors from '@/components/meteors'
 
 const iconStyles = [
   '[&>#nodes]:hidden [&>#vertex]:hidden',
@@ -21,15 +19,15 @@ export default function IndexPage () {
   return (
     <>
       <div className='dark:bg-gradient-to-b dark:from-black dark:via-zing-950 dark:to-background'>
-        <section className='container mx-auto mt-spacing-6 relative z-10'>
-          <div className='flex flex-col items-center gap-y-8'>
+        <section className='mt-spacing-6 pb-spacing-8 relative z-10'>
+          <div className='container mx-auto flex flex-col items-center gap-y-8'>
             <Badge className='lg:py-1 rounded-2xl' variant='outline'>
               <div className='flex gap-x-1 items-center'>
                 <span className='text-emah text-sm lg:text-base lg:font-medium'><span><span className='text-muted-foreground'>-</span>mkt</span><span className='text-muted-foreground'>+</span>hacks <span className='text-muted-foreground'>=</span></span>
                 <Icons.Proposal className='w-3 lg:w-4 h-auto fill-emah' />
               </div>
             </Badge>
-            <div className='max-w-md sm:max-w-xl lg:max-w-3xl font-cairo text-center space-y-8'>
+            <div className='max-w-md sm:max-w-xl lg:max-w-5xl font-cairo text-center space-y-8'>
               <h1 className='relative f-display-1'>
                 <span className='relative'>
                   <Icons.Doodle className='w-auto h-20 sm:h-28 lg:h-32 fill-emah absolute top-1 lg:top-2 my-auto -left-9 sm:-left-16 lg:-left-20 -z-10' />
@@ -46,11 +44,11 @@ export default function IndexPage () {
               Contáctanos
             </Button>
           </div>
-          <div className='w-full h-full absolute top-0 overflow-hidden'>
+          <div className='w-full h-full absolute top-0 -z-10'>
             <Meteors />
           </div>
         </section>
-        <section className='container mt-spacing-8 pb-spacing-7'>
+        <section className='container pb-spacing-7'>
           <div className='text-center'>
             <h2>
               <span className='f-heading-1 font-bold text-gradient'>

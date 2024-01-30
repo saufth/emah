@@ -25,7 +25,7 @@ export function ModeToggle () {
           <span className='sr-only'>Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align='end'>
+      <DropdownMenuContent className='dark:bg-black' align='end'>
         <DropdownMenuItem className='group cursor-pointer transition-colors duration-500' onClick={() => setTheme('light')}>
           <Icons.Sun className='mr-2 h-4 w-4 fill-primary group-hover:fill-secondary transition-colors duration-500' />
           <span className='text-primary group-hover:text-primary-foreground transition-colors duration-500'>Claro</span>
