@@ -43,17 +43,17 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#000000' },
+    { media: '(prefers-color-scheme: light)', color: '#FFFFFF' },
     { media: '(prefers-color-scheme: dark)', color: '#000000' }
   ],
-  colorScheme: 'only light'
+  colorScheme: 'normal'
 }
 
 export default function RootLayout ({ children }: React.PropsWithChildren) {
   return (
     <html className={cn(fontSans.variable, 'font-sans antialiased !scroll-smooth select-none')} lang='es' suppressHydrationWarning>
-      <body className='bg-background min-h-screen'>
-        <ThemeProvider attribute='class' defaultTheme='light' forcedTheme='light'>
+      <body className='bg-background dark:bg-black min-h-screen'>
+        <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           {children}
           <Toaster />
           <TailwindIndicator />

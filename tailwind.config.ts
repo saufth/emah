@@ -52,7 +52,7 @@ const config: Config = {
         h1: 'clamp(2.6rem,4vw,4.2rem)'
       },
       colors: {
-        dark: 'oklch(var(--dark) / <alpha-value>)',
+        emah: 'oklch(67.59% 0.217 38.8)', /* #FF5500 */
         primary: {
           DEFAULT: 'oklch(var(--primary) / <alpha-value>)',
           foreground: 'oklch(var(--primary-foreground) / <alpha-value>)'
@@ -102,6 +102,7 @@ const config: Config = {
         '12-cols': 'calc(((12 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (12 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))))',
         '1/2-cols': 'calc(50% - var(--inner-gutter))',
         '1/3-cols': 'calc(33.333% - var(--inner-gutter))',
+        '2/3-cols': 'calc(66.666% - var(--inner-gutter))',
         ...breakpoints
       },
       height: breakpoints,

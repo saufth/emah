@@ -39,9 +39,9 @@ export interface Section extends ItemWithOptionalContent {
   items: ItemWithOptionalContent[]
 }
 
-export interface Subcategory extends ItemWithOptionalDescription {
+export interface Subcategory extends ItemWithOptionalContent {
   slug?: string
-  items?: Item[]
+  items?: ItemWithOptionalContent[]
 }
 
 export interface Category extends ItemWithOptionalContent {

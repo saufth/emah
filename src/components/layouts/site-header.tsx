@@ -3,6 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Icons } from '@/components/icons'
+import { ModeToggle } from './mode-toggle'
 import {
   useMotionValueEvent,
   useScroll
@@ -28,22 +29,18 @@ export default function SiteHeader () {
     <>
       <header
         className={cn(
-          'w-full sticky top-0 left-0 z-40 transition-colors duration-300',
-          isOnTop ? 'bg-transparent' : 'bg-black/90 backdrop-filter backdrop-blur-sm',
-          isMenuOpen && 'bg-black/80 backdrop-filter backdrop-blur-sm'
+          'w-full sticky top-0 left-0 z-40 border-b transition-colors duration-300 bg-background/0 backdrop-filter backdrop-saturate-150 backdrop-blur-lg',
+          isOnTop && 'border-transparent'
         )}
       >
-        <nav
-          className='relative'
-          aria-label='Emah Directory'
-        >
+        <nav className='relative' aria-label='Emah Directory'>
           <div className='container'>
             <div
-              className='w-full h-[68px] lg:h-[84px] flex justify-between items-center'
+              className='w-full h-16 lg:h-[70px] flex justify-between items-center'
             >
-              <div className='h-5 lg:h-7'>
+              <div className='h-7 lg:h-8'>
                 <Link href='/' onClick={closeMenu}>
-                  <Icons.Logoname className='w-auto h-full fill-white' />
+                  <Icons.Logoname className='w-auto h-full fill-primary first:[&>path]:fill-emah' />
                   <span className='sr-only'>{siteConfig.name} home</span>
                 </Link>
               </div>
@@ -59,8 +56,7 @@ export default function SiteHeader () {
                       )
                     : (
                       <Button
-                        className='hidden lg:flex border-white hover:bg-white text-white hover:text-black'
-                        size='lg'
+                        className='hidden lg:flex'
                         asChild
                         key={key}
                       >
@@ -75,12 +71,13 @@ export default function SiteHeader () {
                 ))}
                 <div className='block lg:hidden'>
                   <div className='block lg:hidden w-6 h-4 relative [&>span]:transition-all' onClick={toggleMenu}>
-                    <span className={cn('w-full h-[2px] bg-white absolute top-0 left-0', isMenuOpen && 'inset-0 m-auto rotate-45')} />
-                    <span className={cn('w-full h-[2px] bg-white absolute top-0 bottom-0 my-auto', isMenuOpen && 'opacity-0')} />
-                    <span className={cn('w-full h-[2px] bg-white absolute bottom-0 left-0', isMenuOpen && 'inset-0 m-auto -rotate-45')} />
+                    <span className={cn('w-full h-[1.5px] bg-primary absolute top-0 left-0', isMenuOpen && 'inset-0 m-auto rotate-45')} />
+                    <span className={cn('w-full h-[1.5px] bg-primary absolute top-0 bottom-0 my-auto', isMenuOpen && 'opacity-0')} />
+                    <span className={cn('w-full h-[1.5px] bg-primary absolute bottom-0 left-0', isMenuOpen && 'inset-0 m-auto -rotate-45')} />
                     <span className='sr-only'>Toggle menu</span>
                   </div>
                 </div>
+                <ModeToggle />
               </div>
             </div>
           </div>
@@ -92,7 +89,7 @@ export default function SiteHeader () {
           isMenuOpen && 'h-[100dvh]'
         )}
       >
-        <nav className='container mt-spacing-9'>
+        <nav className='container mt-spacing-8'>
           {siteNav.map((navItem, key) => (
             <Button className='rounded-none w-full px-0 border-b first:border-t' variant='link' size='lg' asChild key={key}>
               <Link className='flex justify-between' href={navItem.href} onClick={() => setIsMenuOpen(false)}>

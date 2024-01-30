@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: siteConfig.description
 }
 
-export default function HistoriaPage () {
+export default function NosotrosPage () {
   return (
     <>
       <div className='w-full h-[68px] lg:h-[84px] fixed top-0 left-0 bg-black z-20' />
@@ -36,9 +36,16 @@ export default function HistoriaPage () {
         </div>
         <div className='container mt-spacing-7'>
           {history.items.map((historyItem, key) => (
-            <p className='f-subhead-2 mt-spacing-3' key={key}>
-              {historyItem}
-            </p>
+            <div key={key}>
+              <h3 className='f-body-1'>
+                {historyItem.title}
+              </h3>
+              <div key={key}>
+                <p className='f-subhead-2 mt-spacing-3' key={key}>
+                  {historyItem.description}
+                </p>
+              </div>
+            </div>
           ))}
         </div>
       </section>

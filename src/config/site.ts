@@ -17,8 +17,8 @@ export const author: Author = {
 
 export const siteNav = [
   {
-    title: 'Nuestro historia',
-    href: '/historia'
+    title: 'Nosotros',
+    href: '/nosotros'
   },
   {
     title: 'Contáctanos',
@@ -26,13 +26,13 @@ export const siteNav = [
   }
 ]
 
-export const domain = 'dpotencia.com'
+export const domain = 'emah.mx'
 export const contactEmail = `contacto@${domain}`
 
 export const siteConfig: SiteConfig = {
   name: 'Emah',
   description: 'Impulsamos a emprendedores y empresarios a consolidar su modelo de negocio, ofreciendo productos intangibles de alto valor agregado para sus clientes',
-  slogan: 'El orden de los factores SÍ altera el producto',
+  slogan: 'No necesitas más marketing',
   url: `https://${domain}`,
   author,
   mainNav: [

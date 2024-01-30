@@ -1,7 +1,7 @@
 import { type Section } from '@/types'
 
 export const howWeMake: Section = {
-  title: 'Cómo lo hacemos',
+  title: '¿Cómo lo hacemos?',
   description: 'Transformando aquello que los hace únicos en soluciones concretas y de constante valor para el mercado.',
   items: [
     {
@@ -19,6 +19,28 @@ export const howWeMake: Section = {
   ]
 }
 
+export const benefist: Section = {
+  title: 'El orden de los factores SÍ altera el producto',
+  description: 'Al seguir estos pasos, no solo definirás una propuesta de valor clara, sino que también la integrarás y la implementarás de manera efectiva, construyendo así una base sólida para el éxito de tu negocio.',
+  items: [
+    {
+      title: 'Captura la atención de una audiencia específica',
+      description: 'La gente odia los anuncios, estos tienden a exagerar y están por todas partes. Al romper con la norma, tu marca se destaca entre la multitud y tus ventas aumentan.'
+    },
+    {
+      title: 'Genera autenticidad y credibilidad',
+      description: 'Ser transparente y honesto acerca de los defectos y limitaciones de tu marca demuestra que es genuina y confiable, lo que aumentará la lealtad de tus clientes.'
+    },
+    {
+      title: 'Comunica mejor tu propósito y valores',
+      description: 'Haz que tus clientes conecten con tu marca, las iniciativas poco convencionales e inesperadas son excelentes para potenciar la lealtad de tus clientes.'
+    },
+    {
+      title: 'Crea una imagen inolvidable',
+      description: 'Al ser diferente y provocativo, la imagen de tu marca se queda grabada en la mente de tus clientes, aumentando tu reputación  y tus ventas.'
+    }
+  ]
+}
 export const filosophy: Section = {
   title: 'Nuestra razón de ser',
   description: 'Un buen producto se define por una serie de características y cualidades que lo hacen deseable, útil y valioso para los consumidores. Aquí están algunos de los elementos clave que definen un buen producto.',
@@ -60,7 +82,7 @@ export const filosophy: Section = {
       description: 'Los productos deben ser duraderos y resistentes al desgaste normal. Los consumidores aprecian los productos que duran mucho tiempo y requieren menos reemplazos.'
     },
     {
-      title: 'Servicio al cliente y soporte',
+      title: 'Servicio y soporte al cliente',
       description: 'Un buen producto a menudo incluye un excelente servicio al cliente y soporte posventa. Esto puede marcar la diferencia en la satisfacción del cliente y en la fidelidad a la marca.'
     },
     {

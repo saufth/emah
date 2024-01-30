@@ -4,24 +4,24 @@ import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '@/lib/utils'
 
 const buttonVariants = cva(
-  'w-max inline-flex items-center justify-center rounded-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50',
+  'w-max inline-flex items-center justify-center rounded-2xl focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 transition-colors',
   {
     variants: {
       variant: {
-        default: 'bg-primary text-primary-foreground hover:bg-accent hover:text-accent-foreground',
+        default: 'bg-primary/95 text-primary-foreground hover:bg-primary',
         destructive: 'bg-destructive/90 text-destructive-foreground hover:bg-destructive',
-        outline: 'border border-primary text-primary hover:bg-primary text-primary hover:text-primary-foreground',
+        outline: 'border border-primary text-primary hover:bg-muted text-primary hover:text-primary-foreground',
         secondary: 'bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground',
         ghost: 'bg-muted hover:bg-accent text-muted-foreground hover:text-accent-foreground border',
         link: 'hover:underline'
       },
       size: {
-        default: 'h-11 xl:h-12 px-3.5 text-sm xl:text-base',
-        xs: 'text-xs xl:text-sm',
-        sm: 'px-1 text-sm xl:text-base',
-        lg: 'w-fit h-11 xl:h-12 px-2 xl:px-3 xl:text-lg',
-        full: 'w-full xl:w-fit h-12 xl:h-13 px-4 xl:px-6 text-sm xl:text-base',
-        icon: 'h-7 xl:h-[33px] w-7 xl:w-[33px]'
+        default: 'h-8 lg:h-9 px-3.5 text-sm lg:text-base',
+        xs: 'text-xs lg:text-sm',
+        sm: 'px-1 text-sm lg:text-base',
+        lg: 'w-fit h-11 lg:h-12 px-2 lg:px-3 lg:text-lg',
+        full: 'w-full lg:w-fit h-11 lg:h-12 px-4 lg:px-6 lg:text-lg',
+        icon: 'h-7 lg:h-[33px] w-7 lg:w-[33px]'
       }
     },
     defaultVariants: {
