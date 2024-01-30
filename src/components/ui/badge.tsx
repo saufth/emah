@@ -6,14 +6,14 @@ import {
 import { cn } from '@/lib/utils'
 
 const badgeVariants = cva(
-  'inline-flex items-center rounded-sm border px-2.5 py-0.5 text-xs font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2',
+  'inline-flex items-center rounded-xl border px-2.5 sm:px-3 py-1 sm:py-1.5 text-xs lg:text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2',
   {
     variants: {
       variant: {
         default:
-          'border-transparent bg-accent text-accent-foreground shadow',
+          'bg-accent text-accent-foreground shadow',
         secondary:
-          'border-transparent bg-white text-foreground',
+          'bg-accent text-foreground',
         destructive:
           'border-transparent bg-destructive text-destructive-foreground shadow',
         outline: 'text-foreground'

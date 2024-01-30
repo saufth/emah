@@ -40,7 +40,7 @@ export default function Video () {
             <Button size='sm' variant='link' className='sm:text-white' onClick={handleDimissVideo}>
               Descartar
             </Button>
-            <Button size='sm' color='primary' className='sm:bg-white sm:text-black' onClick={handleFullscreenVideo}>
+            <Button size='sm' color='primary' className='sm:bg-white sm:text-black rounded-sm px-2' onClick={handleFullscreenVideo}>
               Ver video
             </Button>
           </div>
