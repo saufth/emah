@@ -31,7 +31,7 @@ import { services } from '@/config/services'
 
 type Inputs = z.infer<typeof contactEmailSchema>
 
-const recaptchaSitekey = String(process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY)
+const recaptchaSitekey = String(process.env.NEXT_PUBLIC_RECAPTCHA_SITE)
 
 export default function ContactForm () {
   const [isPending, startTransition] = React.useTransition()
