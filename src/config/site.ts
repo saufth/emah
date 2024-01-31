@@ -17,6 +17,10 @@ export const author: Author = {
 
 export const siteNav = [
   {
+    title: 'Consultoría',
+    href: '/consultoria'
+  },
+  {
     title: 'Nosotros',
     href: '/nosotros'
   },

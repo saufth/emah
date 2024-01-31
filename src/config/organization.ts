@@ -2,7 +2,7 @@ import { type Section } from '@/types'
 
 export const howWeMake: Section = {
   title: '¿Cómo lo hacemos?',
-  description: 'Transformamos aquello que te hace únicos en soluciones concretas y de constante valor para el mercado.',
+  description: 'Transformamos aquello que te hace único en soluciones concretas y de constante valor agregado para el mercado.',
   items: [
     {
       title: 'Define',
@@ -20,7 +20,7 @@ export const howWeMake: Section = {
 }
 
 export const benefist: Section = {
-  title: 'Al seguir estos pasos, no solo definirás una propuesta de valor clara, sino que también la integrarás y la implementarás de manera efectiva, construyendo así una base sólida para el éxito de tu negocio.',
+  title: 'Siguiendo nuestra metologia de trabajo, no solo podras definir con claridad tu propuesta de valor, sino que tambien la podras integrar e implementar de forma efectiva y eficiente, logrando asi construir una base solida para el exito de tu empresa o negocio.',
   items: [
     {
       title: 'Captura la atención de una audiencia específica',

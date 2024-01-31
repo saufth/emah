@@ -108,7 +108,7 @@ export default function IndexPage () {
               <div className='w-full h-full rounded-[9px]'>
                 <CardHeader className='h-full flex items-center'>
                   <h3>
-                    <span className='f-subhead-1 font-thin'>
+                    <span className='f-subhead-2 font-thin'>
                       {benefist.title}
                     </span>
                   </h3>
