@@ -2,7 +2,7 @@ import { type Section } from '@/types'
 
 export const howWeMake: Section = {
   title: '¿Cómo lo hacemos?',
-  description: 'Transformamos aquello que los hace únicos en soluciones concretas y de constante valor para el mercado.',
+  description: 'Transformamos aquello que te hace únicos en soluciones concretas y de constante valor para el mercado.',
   items: [
     {
       title: 'Define',
