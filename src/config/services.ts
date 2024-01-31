@@ -1,7 +1,7 @@
 import { type Category } from '@/types'
 
 export const services: Category = {
-  title: 'Que tus clientes hagan la publicidad',
+  title: 'Planes a la medida de tus necesidades',
   description: 'El anti-marketing es el marketing que pone al cliente en primer lugar. En lugar de gastar dinero en publicidad, se enfoca en crear productos y servicios que tus clientes quieran compartir con sus amigos y familiares.',
   items: [
     {
