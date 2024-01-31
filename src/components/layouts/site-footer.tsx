@@ -13,11 +13,11 @@ export default function SiteFooter () {
         <nav className='flex flex-col gap-4'>
           <div className='flex gap-x-2'>
             <Link href='/'>
-              <Icons.Logomark className='w-auto h-7 sm:h-8 fill-primary first:[&>path]:fill-emah' />
+              <Icons.Logoname className='w-auto h-6 sm:h-7 fill-primary first:[&>path]:fill-emah' />
               <span className='sr-only'>{siteConfig.name}</span>
             </Link>
-            <span className='text-lg sm:text-xl text-bold'>
-              {`${siteConfig.name.toLocaleLowerCase()} © ${new Date().getFullYear()}`}
+            <span className='text-lg leading-none sm:text-xl sm:leading-none text-bold'>
+              {`© ${new Date().getFullYear()}`}
             </span>
           </div>
           <ul className='flex flex-col gap-3'>

@@ -99,7 +99,6 @@ export default function ContactForm () {
               <FormLabel>Nombre de contacto</FormLabel>
               <FormControl>
                 <Input
-                  className='rounded-none'
                   placeholder='Tu nombre completo'
                   {...field}
                 />
@@ -116,7 +115,6 @@ export default function ContactForm () {
               <FormLabel>Correo de contacto</FormLabel>
               <FormControl>
                 <Input
-                  className='rounded-none'
                   placeholder='correo@ejemplo.com'
                   {...field}
                 />
@@ -137,11 +135,11 @@ export default function ContactForm () {
                   field.onChange(value)}
               >
                 <FormControl>
-                  <SelectTrigger className='rounded-none'>
+                  <SelectTrigger>
                     <SelectValue placeholder={field.value} />
                   </SelectTrigger>
                 </FormControl>
-                <SelectContent className='rounded-none'>
+                <SelectContent>
                   <SelectGroup>
                     {services.items.map(
                       (service) => (
@@ -170,7 +168,7 @@ export default function ContactForm () {
               <FormLabel>Descripción de la problemática o solución que necesita</FormLabel>
               <FormControl>
                 <Textarea
-                  className='resize-none border-none  ring-ring ring-1focus-visible:ring-ring rounded-none'
+                  className='resize-none border-none ring-ring ring-1focus-visible:ring-ring'
                   rows={4}
                   placeholder='Cuéntanos ¿Cómo podemos ayudarte?'
                   {...field}
@@ -180,12 +178,15 @@ export default function ContactForm () {
             </FormItem>
           )}
         />
-        <ReCAPTCHA
-          ref={recaptchaRef}
-          sitekey={recaptchaSitekey}
-        />
+        <div className='flex'>
+          <ReCAPTCHA
+            ref={recaptchaRef}
+            sitekey={recaptchaSitekey}
+          />
+        </div>
         <Button
           className='[&>*]:text-primary-foreground'
+          size='full'
           disabled={isPending}
         >
           {isPending

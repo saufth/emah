@@ -49,7 +49,7 @@ export default function SiteHeader () {
                   key < siteNav.length - 1
                     ? (
                       <Button className='hidden lg:flex' variant='link' size='lg' asChild key={key}>
-                        <Link className='flex items-center gap-x-1 text-white' href={navItem.href}>
+                        <Link className='flex items-center gap-x-1' href={navItem.href}>
                           {navItem.title}
                         </Link>
                       </Button>

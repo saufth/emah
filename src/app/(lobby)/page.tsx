@@ -15,7 +15,7 @@ export default function IndexPage () {
     <>
       <div className='dark:bg-gradient-to-b dark:from-black dark:via-zing-950 dark:to-background relative z-10'>
         <section className='mt-spacing-4 pb-spacing-8 relative z-10'>
-          <div className='container mx-auto flex flex-col items-center gap-y-8'>
+          <div className='container-sm mx-auto flex flex-col items-center gap-y-8'>
             <Badge className='mt-spacing-6' variant='secondary'>
               <div className='flex gap-x-1 items-center'>
                 <span className='text-emah text-sm lg:text-base lg:font-medium'>
@@ -172,13 +172,13 @@ export default function IndexPage () {
             )}
           </div>
         </div>
-        <div className='container mt-spacing-6'>
+        <div className='container-sm mt-spacing-6'>
           <div className='f-subhead-2 text-muted-foreground text-center text-balanced'>
             Te ayudamos a <b>identificar a tus clientes ideales</b>, crear una solución relevante para tus consumidores,
             estructurar tus precios, diseñamos los materiales impresos o digitales y <b>desarrollamos la marca</b>{' '}
             necesaria para lanzar tu nuevo negocio competitivo y rentable al mundo.
           </div>
-          <div className='w-fit mx-auto mt-spacing-4'>
+          <div className='flex justify-center mx-auto mt-spacing-4'>
             <Button className='mt-2 sm:mt-4' color='primary' size='full'>
               Contáctanos
             </Button>

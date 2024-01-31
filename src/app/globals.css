@@ -165,7 +165,7 @@
   }
 
   .f-display-3 {
-    @apply text-[2rem] sm:text-[2.625rem] xl:text-[3.4375rem] leading-[110%] -tracking-[0.01em] font-bold;
+    @apply text-[2rem] sm:text-[2.625rem] xl:text-[3.8rem] leading-[110%] -tracking-[0.01em] font-bold;
   }
 
   .f-heading-1 {

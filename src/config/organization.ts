@@ -42,7 +42,7 @@ export const benefist: Section = {
   ]
 }
 export const filosophy: Section = {
-  title: 'Nuestra razón de ser',
+  title: 'Nuestra filosofía',
   description: 'Un buen producto se define por una serie de características y cualidades que lo hacen deseable, útil y valioso para los consumidores. Aquí están algunos de los elementos clave que definen un buen producto.',
   items: [
     {
