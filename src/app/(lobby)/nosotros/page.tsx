@@ -28,8 +28,8 @@ export default function AboutPage () {
           <Image
             src='/images/about-hero.webp'
             alt='Camión blanco conduciendo por la carretera serpenteando a través de un paisaje boscoso en colores otoñales al atardecer'
-            width={3200}
-            height={2400}
+            width={1920}
+            height={1080}
             sizes='(max-width: 744px) 100vw, (max-width: 1280px) 100vw, (max-width: 1440px) 100vw, 100vw'
             loading='lazy'
             className='w-full 3xl:rounded-3xl'
