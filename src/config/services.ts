@@ -1,12 +1,13 @@
 import { type Category } from '@/types'
 
 export const services: Category = {
-  title: 'Consultoria específica para cada etapa',
+  title: 'Que tus clientes hagan la publicidad',
+  description: 'El anti-marketing es el marketing que pone al cliente en primer lugar. En lugar de gastar dinero en publicidad, se enfoca en crear productos y servicios que tus clientes quieran compartir con sus amigos y familiares.',
   items: [
     {
       title: 'Emprender con Éxito',
       description: [
-        '¿Tienes deseos de emprender sin morir en el intento? ¿Ya desarrollaste tu modelo de negocio? ¿Sabes cuál es tu razón de ser? ¿Tu razón de ser esta alineada con la razón de ser de tu emprendimiento?',
+        '¿Tienes deseos de emprender sin morir en el intento? ¿Ya desarrollaste tu modelo de negocio? ¿Sabes cuál es tu razón de ser?',
         'Estos son algunos factores que te ayudamos a comprender con claridad antes de que te lances al vacío sin paracaídas. Las estadísticas de emprendimientos que fracasan son abrumadoras, sin embargo, trabajando en equipo, con la estrategia y enfoque correcto, la esperanza de éxito es una gran posibilidad.'
       ],
       label: 'Anti-Marketing 1.0'

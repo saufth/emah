@@ -129,11 +129,14 @@ export default function IndexPage () {
       <section className='pt-spacing-7 border-t'>
         <div className='container-sm'>
           <div className='text-center'>
-            <h2>
+            <h2 className='text-balanced'>
               <span className='f-heading-1 font-bold text-gradient'>
                 {services.title}
               </span>
             </h2>
+            <p className='mx-auto f-subhead-2 text-muted-foreground text-balanced mt-spacing-4'>
+              El <b>anti-marketing</b> es el marketing que <b>pone al cliente en primer lugar</b>. En lugar de gastar dinero en publicidad, se enfoca en crear productos y servicios que tus clientes quieran compartir con sus amigos y familiares.
+            </p>
           </div>
           <div className='cols-container gap-y-gutter mt-spacing-6'>
             {services.items.map((item, key) => (
