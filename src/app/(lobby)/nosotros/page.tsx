@@ -1,7 +1,7 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
-import { culture, history } from '@/config/organization'
+import { culture } from '@/config/organization'
 import { siteConfig } from '@/config/site'
 import { Button } from '@/components/ui/button'
 
