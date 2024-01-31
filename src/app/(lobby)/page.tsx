@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
@@ -8,7 +9,6 @@ import { cn } from '@/lib/utils'
 import { benefist, howWeMake } from '@/config/organization'
 import { siteConfig } from '@/config/site'
 import { services } from '@/config/services'
-import Link from 'next/link'
 
 export default function IndexPage () {
   return (

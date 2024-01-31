@@ -21,6 +21,10 @@ export const siteNav = [
     href: '/nosotros'
   },
   {
+    title: 'Razón de ser',
+    href: '/razon-de-ser'
+  },
+  {
     title: 'Contáctanos',
     href: '/contacto'
   }

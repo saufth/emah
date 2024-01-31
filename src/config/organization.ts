@@ -105,28 +105,6 @@ export const culture: Section = {
   description: 'El éxito a corto, mediano y largo plazo de cualquier empresa, no depende de un solo aspecto, sino de la sincronización de muchos. Aquí te presentamos los más importantes para nosotros, mismos que forman parte de nuestro ADN y que son la clave en la generación de soluciones de valor para nuestros clientes.',
   items: [
     {
-      title: 'Trabajamos en equipo',
-      description: [
-        'Los negocios son opuestos a las matemáticas. Mientras las matemáticas plantean que la mejor forma de sumar es multiplicar, en los negocios la mejor forma de sumar es dividir. Dividir el esfuerzo, el trabajo, las tareas y hasta los ingresos.',
-        'Más allá de querer ser un experto en todas las áreas de una empresa o negocio, busca rodearte de un equipo de expertos que complemente correctamente las habilidades y conocimientos que no tienes.'
-      ],
-      image: {
-        src: '/images/culture1.webp',
-        alt: 'Trabajamos en equipo'
-      }
-    },
-    {
-      title: 'Transformamos problemas en oportunidades',
-      description: [
-        'Problemas = áreas de oportunidad.',
-        'Mientras más grande y frecuente sea el problema, mayor será la posibilidad de generar valor.'
-      ],
-      image: {
-        src: '/images/culture2.webp',
-        alt: 'Transformamos problemas en oportunidades'
-      }
-    },
-    {
       title: 'No asumimos',
       description: [
         'Se debe tener certeza en cada tarea u objetivo a realizar. Nunca asumir, en caso de no tener plena certeza.',
@@ -151,14 +129,24 @@ export const culture: Section = {
       }
     },
     {
-      title: 'Prevenimos futuras tendencias',
+      title: 'Buscamos progreso, no perfección',
       description: [
-        'Saber prever o anticipar cuando entrar y salir de cualquier oportunidad de negocio. Nada es eterno; todo tiene un ciclo, un punto alto y un punto bajo.',
-        'Lo único constante es el cambio.'
+        'El mundo de los negocios es un juego infinito en el que no se tiene una certeza plena de todos los elementos que participan en el mercado, ni de la variabilidad de estos. A lo máximo que se puede aspirar es a tener estimaciones.'
       ],
       image: {
-        src: '/images/culture5.webp',
-        alt: 'Prevenimos futuras tendencias'
+        src: '/images/culture7.webp',
+        alt: 'Buscamos progreso, no perfección'
+      }
+    },
+    {
+      title: 'Transformamos problemas en oportunidades',
+      description: [
+        'Problemas = áreas de oportunidad.',
+        'Mientras más grande y frecuente sea el problema, mayor será la posibilidad de generar valor.'
+      ],
+      image: {
+        src: '/images/culture2.webp',
+        alt: 'Transformamos problemas en oportunidades'
       }
     },
     {
@@ -173,20 +161,32 @@ export const culture: Section = {
       }
     },
     {
-      title: 'Buscamos progreso, no perfección',
+      title: 'Prevenimos futuras tendencias',
       description: [
-        'El mundo de los negocios es un juego infinito en el que no se tiene una certeza plena de todos los elementos que participan en el mercado, ni de la variabilidad de estos. A lo máximo que se puede aspirar es a tener estimaciones.'
+        'Saber prever o anticipar cuando entrar y salir de cualquier oportunidad de negocio. Nada es eterno; todo tiene un ciclo, un punto alto y un punto bajo.',
+        'Lo único constante es el cambio.'
       ],
       image: {
-        src: '/images/culture7.webp',
-        alt: 'Buscamos progreso, no perfección'
+        src: '/images/culture5.webp',
+        alt: 'Prevenimos futuras tendencias'
+      }
+    },
+    {
+      title: 'Trabajamos en equipo',
+      description: [
+        'Los negocios son opuestos a las matemáticas. Mientras las matemáticas plantean que la mejor forma de sumar es multiplicar, en los negocios la mejor forma de sumar es dividir. Dividir el esfuerzo, el trabajo, las tareas y hasta los ingresos.',
+        'Más allá de querer ser un experto en todas las áreas de una empresa o negocio, busca rodearte de un equipo de expertos que complemente correctamente las habilidades y conocimientos que no tienes.'
+      ],
+      image: {
+        src: '/images/culture1.webp',
+        alt: 'Trabajamos en equipo'
       }
     }
   ]
 }
 
 export const history: Section = {
-  title: 'Nuestra historia',
+  title: 'Nuestra razón de ser',
   description: [
     'En el mercado podemos ver muchas historias de éxito, pero también historias de fracaso. Dependiendo de cómo analices las estadísticas, podrás encontrar que entre 8 y 9 de cada 10 emprendimientos terminan cerrando o en banca rota durante un periodo no mayor a 2 años. Así mismo, para las empresas medianas y grandes, que ya tienen más de 10 años en el mercado, existe un concepto conocido como “zombie companies”, el cual se refiere a aquellas compañías que requieren, para poder subsistir, acceder a préstamos o financiamientos, y que, además, su nivel de ingresos no es suficiente para cubrir el total de sus gastos corrientes. Esto obviamente deriva en una ausencia de pago de utilidades para sus accionistas.',
     'Es complicado tener un número exacto de cuántas empresas “zombie” hay en total. Sin embargo, se estima que entre un 20 y 30 % de ellas en el mundo se encuentran en esta situación.',
