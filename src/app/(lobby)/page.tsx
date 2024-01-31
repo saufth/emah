@@ -106,18 +106,18 @@ export default function IndexPage () {
             ))}
             <Card as='article' className='w-6-cols sm:w-2/3-cols lg:w-8-cols border dark:border-zinc-700 dark:bg-zinc-950'>
               <div className='w-full h-full rounded-[9px]'>
-                <CardHeader>
+                <CardHeader className='h-full flex items-center'>
                   <h3>
-                    <span className='f-heading-3 font-bold text-gradient'>
+                    <span className='f-subhead-1 font-thin'>
                       {benefist.title}
                     </span>
                   </h3>
                 </CardHeader>
-                <CardContent className='mt-spacing-2'>
-                  <p className='f-subhead-3 text-muted-foreground text-balanced'>
+                {/* <CardContent className='mt-spacing-2'>
+                  <p className='f-subhead-3 text-balanced'>
                     {benefist.description}
                   </p>
-                </CardContent>
+                </CardContent> */}
               </div>
             </Card>
           </div>

@@ -20,8 +20,7 @@ export const howWeMake: Section = {
 }
 
 export const benefist: Section = {
-  title: 'El orden de los factores SÍ altera el producto',
-  description: 'Al seguir estos pasos, no solo definirás una propuesta de valor clara, sino que también la integrarás y la implementarás de manera efectiva, construyendo así una base sólida para el éxito de tu negocio.',
+  title: 'Al seguir estos pasos, no solo definirás una propuesta de valor clara, sino que también la integrarás y la implementarás de manera efectiva, construyendo así una base sólida para el éxito de tu negocio.',
   items: [
     {
       title: 'Captura la atención de una audiencia específica',
@@ -41,17 +40,14 @@ export const benefist: Section = {
     }
   ]
 }
+
 export const filosophy: Section = {
   title: 'Nuestra filosofía',
   description: 'Un buen producto se define por una serie de características y cualidades que lo hacen deseable, útil y valioso para los consumidores. Aquí están algunos de los elementos clave que definen un buen producto.',
   items: [
     {
-      title: 'Satisfacción de las necesidades del cliente',
+      title: 'Satisfacción',
       description: 'Un buen producto debe satisfacer las necesidades o resolver los problemas de los clientes de manera efectiva. Debe abordar una demanda o una preocupación real en el mercado.'
-    },
-    {
-      title: 'Calidad',
-      description: 'La calidad es esencial. Un buen producto debe estar bien construido, ser duradero y funcionar como se espera. La calidad también se refiere a la consistencia en el rendimiento del producto.'
     },
     {
       title: 'Valor',
@@ -82,7 +78,7 @@ export const filosophy: Section = {
       description: 'Los productos deben ser duraderos y resistentes al desgaste normal. Los consumidores aprecian los productos que duran mucho tiempo y requieren menos reemplazos.'
     },
     {
-      title: 'Servicio y soporte al cliente',
+      title: 'Soporte al cliente',
       description: 'Un buen producto a menudo incluye un excelente servicio al cliente y soporte posventa. Esto puede marcar la diferencia en la satisfacción del cliente y en la fidelidad a la marca.'
     },
     {
@@ -94,7 +90,7 @@ export const filosophy: Section = {
       description: 'En un mundo cada vez más preocupado por el medio ambiente, la sostenibilidad es un factor importante. Los productos sostenibles son vistos favorablemente por los consumidores conscientes del medio ambiente.'
     },
     {
-      title: 'Opiniones y recomendaciones positivas',
+      title: 'Recomendaciones positivas',
       description: 'Las opiniones y recomendaciones de los usuarios pueden ser un indicador sólido de un buen producto. Las experiencias positivas de otros clientes pueden influir en la decisión de compra de los nuevos clientes.'
     }
   ]
@@ -139,17 +135,6 @@ export const culture: Section = {
       }
     },
     {
-      title: 'Transformamos problemas en oportunidades',
-      description: [
-        'Problemas = áreas de oportunidad.',
-        'Mientras más grande y frecuente sea el problema, mayor será la posibilidad de generar valor.'
-      ],
-      image: {
-        src: '/images/culture2.webp',
-        alt: 'Transformamos problemas en oportunidades'
-      }
-    },
-    {
       title: 'Inovamos constantemente',
       description: [
         'Lo importante es generar innovación alrededor de lo que el cliente considera valioso.',
@@ -172,14 +157,14 @@ export const culture: Section = {
       }
     },
     {
-      title: 'Trabajamos en equipo',
+      title: 'Transformamos problemas en oportunidades',
       description: [
-        'Los negocios son opuestos a las matemáticas. Mientras las matemáticas plantean que la mejor forma de sumar es multiplicar, en los negocios la mejor forma de sumar es dividir. Dividir el esfuerzo, el trabajo, las tareas y hasta los ingresos.',
-        'Más allá de querer ser un experto en todas las áreas de una empresa o negocio, busca rodearte de un equipo de expertos que complemente correctamente las habilidades y conocimientos que no tienes.'
+        'Problemas = áreas de oportunidad.',
+        'Mientras más grande y frecuente sea el problema, mayor será la posibilidad de generar valor.'
       ],
       image: {
-        src: '/images/culture1.webp',
-        alt: 'Trabajamos en equipo'
+        src: '/images/culture2.webp',
+        alt: 'Transformamos problemas en oportunidades'
       }
     }
   ]
@@ -199,7 +184,7 @@ export const history: Section = {
       description: 'Que alguna vez estuvieron en la cima de sus respectivos giros comerciales. Sin embargo, no lograron consolidarse en el mercado y hoy simplemente pasarán a la historia como una empresa más, lejos de ser la que alguna vez fueron.'
     },
     {
-      title: '¿Y qué tiene que ver todo esto con el marketing?',
+      title: '¿Y qué tiene que ver todo esto con el anti-marketing?',
       description: [
         'La respuesta es que todas estas empresas no previeron lo que se venía y se aferraron a sus modelos arcaicos de negocio. Decidieron que lo que ellos pensaban era más importante que aquello que el cliente quería o necesitaba. Y puesto que, como lo mencionamos previamente, lo único constante es el cambio, fue algo que no tomaron en cuenta, por lo que el mercado tuvo que seguir su curso natural y decidir por ellos.',
         'Evitar que pases por la misma suerte que estas empresas es justamente nuestro gran combustible y razón de ser. Sabemos que para ello se requiere de un conocimiento profundo del mercado y del cliente, de capacidad para prever y anticipar tendencias, así como una estrategia a la medida de tus necesidades y las de tu cliente. Todo esto y mucho más es lo que podemos y queremos hacer por ti.',

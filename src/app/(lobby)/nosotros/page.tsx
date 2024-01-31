@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { culture, history } from '@/config/organization'
 import { siteConfig } from '@/config/site'
+import { Button } from '@/components/ui/button'
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
@@ -76,6 +77,16 @@ export default function AboutPage () {
             </Card>
           )
           )}
+        </div>
+        <div className='container-sm mt-spacing-6'>
+          <div className='f-subhead-2 text-muted-foreground text-center text-balanced'>
+            <b>Anti-Marketing</b> propone que un producto o servicio que realmente resuelva un problema de raíz y un branding dinámico es suficiente para <b>aportar valor</b> y asegurar la rentabilidad a largo plazo.
+          </div>
+          <div className='flex justify-center mx-auto mt-spacing-4'>
+            <Button className='mt-2 sm:mt-4' color='primary' size='full'>
+              Contáctanos
+            </Button>
+          </div>
         </div>
       </section>
     </>
