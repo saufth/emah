@@ -44,12 +44,12 @@ export default function SiteHeader () {
                   <span className='sr-only'>{siteConfig.name} home</span>
                 </Link>
               </div>
-              <div className='flex items-center gap-x-5 lg:gap-x-3'>
+              <div className='flex items-center gap-x-3'>
                 {siteNav.map((navItem, key) => (
                   key < siteNav.length - 1
                     ? (
-                      <Button className='hidden lg:flex' variant='link' size='lg' asChild key={key}>
-                        <Link className='flex items-center gap-x-1' href={navItem.href}>
+                      <Button className='hidden lg:flex px-1' variant='link' asChild key={key}>
+                        <Link href={navItem.href}>
                           {navItem.title}
                         </Link>
                       </Button>
@@ -60,10 +60,7 @@ export default function SiteHeader () {
                         asChild
                         key={key}
                       >
-                        <Link
-                          className='group flex items-center gap-x-1'
-                          href={contactLink.href}
-                        >
+                        <Link href={contactLink.href}>
                           {contactLink.title}
                         </Link>
                       </Button>
