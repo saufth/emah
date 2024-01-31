@@ -182,8 +182,10 @@ export default function IndexPage () {
             necesaria para lanzar tu nuevo negocio competitivo y rentable al mundo.
           </div>
           <div className='flex justify-center mx-auto mt-spacing-4'>
-            <Button className='mt-2 sm:mt-4' color='primary' size='full'>
-              Contáctanos
+            <Button className='mt-2 sm:mt-4' color='primary' size='full' asChild>
+              <Link href='/contacto'>
+                Contáctanos
+              </Link>
             </Button>
           </div>
         </div>

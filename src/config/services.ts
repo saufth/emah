@@ -15,7 +15,7 @@ export const services: Category = {
     {
       title: 'De Emprendedor a Empresario',
       description: [
-        '¿Sabes cuáles son las diferencias entre un emprendedor y un empresario? ¿Estas teniendo rendimientos a expensas de ser un esclavo de tu negocio? ¿Tu negocio sobreviviría la prueba de los 3 meses sin ti?',
+        '¿Sabes cuáles son las diferencias entre un emprendedor y un empresario? ¿Estás teniendo rendimientos a expensas de ser un esclavo de tu negocio? ¿Tu negocio sobreviviría la prueba de los 3 meses sin tí?',
         'Si la mayor parte de tus respuestas fueron NO, es momento de rediseñar tu modelo de negocio hacia el de una empresa autosustentable, cumpliendo con las necesidades del cliente y las expectativas financieras de los socios e inversionistas.'
       ],
       label: 'Anti-Marketing 2.0'
