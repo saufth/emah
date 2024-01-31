@@ -24,11 +24,8 @@ export default function Video () {
             className='w-auto sm:w-full sm:h-auto h-full sm:aspect-video relative'
             width={1920}
             height={1080}
-            controls={false}
-            autoPlay
-            muted
-            loop
-            playsInline
+            controls
+            poster='/images/placeholder.webp'
             disablePictureInPicture
             controlsList='nodownload noplaybackrate'
             onContextMenu={preventContextMenu}
@@ -36,7 +33,7 @@ export default function Video () {
           >
             <source src='/video/emah.mp4' type='video/mp4' />
           </video>
-          <div className='w-full p-3 sm:absolute bottom-0 left-0 flex justify-end items-center gap-x-2'>
+          <div className='w-full p-3 sm:absolute bottom-0 left-0 flex justify-end items-center gap-x-2 sm:hidden'>
             <Button size='sm' variant='link' className='sm:text-white' onClick={handleDimissVideo}>
               Descartar
             </Button>
