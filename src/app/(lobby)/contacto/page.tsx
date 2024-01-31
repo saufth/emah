@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 export default function ContactPage () {
   return (
     <>
-      <div className='mt-spacing-7'>
+      <div className='mt-spacing-6'>
         <div className='container'>
-          <h1 className='f-heading-1 md:pr-9 lg:pr-11'>
+          <h1 className='f-display-3 text-gradient text-balanced'>
             Ponte en contacto con nosotros
           </h1>
           <div className='cols-container mt-spacing-6'>
