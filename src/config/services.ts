@@ -7,8 +7,8 @@ export const services: Category = {
     {
       title: 'Emprender con Éxito',
       description: [
-        'Primer paso.',
-        'Modelo de negocio.',
+        'Primer paso',
+        'Modelo de negocio',
         'Propósito'
       ],
       label: 'Anti-Marketing 1.0'
@@ -16,18 +16,18 @@ export const services: Category = {
     {
       title: 'De Emprendedor a Empresario',
       description: [
-        'Escalabilidad.',
-        'Rendimiento.',
-        'Persistencia.'
+        'Escalabilidad',
+        'Rendimiento',
+        'Persistencia'
       ],
       label: 'Anti-Marketing 2.0'
     },
     {
       title: 'De Empresa a Legado',
       description: [
-        'Cultura.',
-        'Adaptabilidad.',
-        'Excelencia.'
+        'Cultura',
+        'Adaptabilidad',
+        'Excelencia'
       ],
       label: 'Anti-Marketing 3.0'
     }
