@@ -9,7 +9,7 @@ export const services: Category = {
       description: [
         'Primer paso.',
         'Modelo de negocio.',
-        'Proposito'
+        'Propósito'
       ],
       label: 'Anti-Marketing 1.0'
     },
