@@ -152,21 +152,24 @@ export default function IndexPage () {
                       {item.title}
                     </h3>
                   </CardHeader>
-                  <CardContent className='mt-spacing-2'>
+                  <CardContent className='mt-spacing-4 px-2 py-5'>
                     {typeof item.description === 'string'
                       ? (
-                        <p className='f-body-1 text-muted-foreground'>
+                        <p className='f-subhead-2'>
                           {item.description}
                         </p>
                         )
                       : item.description && (
-                        <>
+                        <ul className='space-y-5'>
                           {item.description.map((description, key) => (
-                            <p className='f-body-1 text-muted-foreground mt-spacing-2' key={key}>
-                              {description}
-                            </p>
+                            <li className='flex items-center gap-x-2' key={key}>
+                              <div className='w-[5px] h-[5px] rounded-full bg-muted-foreground' />
+                              <p className='f-subhead-2 text-muted-foreground'>
+                                {description}
+                              </p>
+                            </li>
                           ))}
-                        </>
+                        </ul>
                       )}
                   </CardContent>
                 </div>
