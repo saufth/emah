@@ -152,7 +152,7 @@ export default function IndexPage () {
                       {item.title}
                     </h3>
                   </CardHeader>
-                  <CardContent className='mt-spacing-4 px-2 py-5'>
+                  <CardContent className='mt-spacing-4 px-2.5 py-5'>
                     {typeof item.description === 'string'
                       ? (
                         <p className='f-subhead-2'>
