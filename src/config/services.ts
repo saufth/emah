@@ -7,27 +7,27 @@ export const services: Category = {
     {
       title: 'Emprender con Éxito',
       description: [
-        '¿Tienes deseos de emprender sin morir en el intento?',
-        '¿Ya desarrollaste tu modelo de negocio?',
-        '¿Sabes cuál es tu razón de ser?'
+        'Primer paso.',
+        'Modelo de negocio.',
+        'Proposito'
       ],
       label: 'Anti-Marketing 1.0'
     },
     {
       title: 'De Emprendedor a Empresario',
       description: [
-        '¿Sabes cuáles son las diferencias entre un emprendedor y un empresario?',
-        '¿Estás teniendo rendimientos a expensas de ser un esclavo de tu negocio?',
-        '¿Tu negocio sobreviviría la prueba de los 3 meses sin tí?'
+        'Escalabilidad.',
+        'Rendimiento.',
+        'Persistencia.'
       ],
       label: 'Anti-Marketing 2.0'
     },
     {
       title: 'De Empresa a Legado',
       description: [
-        '¿Cuál es el legado que tu empresa está dejando al mundo?',
-        '¿Tu equipo conoce y comparte tu visión del futuro?',
-        '¿Tu negocio sobreviviría la prueba de los 12 meses sin ti?'
+        'Cultura.',
+        'Adaptabilidad.',
+        'Excelencia.'
       ],
       label: 'Anti-Marketing 3.0'
     }
