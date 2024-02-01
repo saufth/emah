@@ -14,7 +14,7 @@ export const services: Category = {
       label: 'Anti-Marketing 1.0'
     },
     {
-      title: 'De Emprendedor a Empresario',
+      title: 'Emprendedor a Empresario',
       description: [
         'Escalabilidad',
         'Rendimiento',
@@ -23,7 +23,7 @@ export const services: Category = {
       label: 'Anti-Marketing 2.0'
     },
     {
-      title: 'De Empresa a Legado',
+      title: 'Empresa a Legado',
       description: [
         'Cultura',
         'Adaptabilidad',

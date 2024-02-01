@@ -141,14 +141,14 @@ export default function IndexPage () {
           <div className='cols-container gap-y-gutter mt-spacing-6'>
             {services.items.map((item, key) => (
               <Card as='article' className='w-6-cols sm:w-8-cols lg:w-4-cols border dark:bg-zinc-950 dark:border-zinc-700 py-1 px-1 sm:p-1' key={key}>
-                <div className='w-full h-full rounded-lg dark:bg-gradient-to-t dark:from-zinc-950 dark:to-muted py-6 px-8 sm:p-8'>
+                <div className='w-full h-full rounded-lg dark:bg-gradient-to-t dark:from-zinc-950 dark:to-muted py-6 px-8 sm:px-6 sm:py-10'>
                   <CardHeader>
                     <Badge className='dark:bg-zinc-900' variant='outline'>
-                      <span className='text-emah font-normal lg:font-medium'>
+                      <span className='text-emah text-xs'>
                         {item.label}
                       </span>
                     </Badge>
-                    <h3 className='f-subhead-2 font-semibold'>
+                    <h3 className='f-subhead-1 font-semibold'>
                       {item.title}
                     </h3>
                   </CardHeader>
@@ -163,7 +163,7 @@ export default function IndexPage () {
                         <ul className='space-y-5'>
                           {item.description.map((description, key) => (
                             <li className='flex items-center gap-x-2' key={key}>
-                              <div className='w-[5px] h-[5px] rounded-full bg-muted-foreground' />
+                              <Icons.Doodle className='w-6 h-6 fill-emah' />
                               <p className='f-subhead-2 text-muted-foreground'>
                                 {description}
                               </p>
