@@ -16,8 +16,8 @@ export const services: Category = {
     {
       title: 'Emprendedor a Empresario',
       description: [
-        'Escalabilidad',
         'Rendimiento',
+        'Escalabilidad',
         'Persistencia'
       ],
       label: 'Anti-Marketing 2.0'
