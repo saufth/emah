@@ -1,24 +1,23 @@
 'use client'
 import React from 'react'
 import { Button } from '@/components/ui/button'
+import { isFullScreen, requestFullScreen } from '@/lib/utils'
 
 export default function Video () {
   const [isVideo, setIsVideo] = React.useState<boolean>(true)
   const videoRef = React.useRef<HTMLVideoElement>(null)
 
   const handleFullScreenChange = () => {
-    const videoNode = videoRef.current
-    const isFullscreen = document.fullscreenElement
-
-    if (!isFullscreen) {
-      videoNode?.pause()
-    }
+    !isFullScreen && videoRef.current?.pause()
   }
 
   const handleFullscreenVideo = () => {
-    alert('works')
-    videoRef.current?.requestFullscreen()
-    videoRef.current?.play()
+    const videoNode = videoRef.current
+
+    if (videoNode) {
+      requestFullScreen(videoNode)
+      videoRef.current?.play()
+    }
   }
 
   const handleDimissVideo = () => {
@@ -55,7 +54,7 @@ export default function Video () {
           >
             <source src='/video/emah.mp4' type='video/mp4' />
           </video>
-          <div className='w-full p-3 lg:absolute bottom-0 left-0 flex justify-end items-center gap-x-2 z-10'>
+          <div className='w-full p-3 lg:absolute bottom-0 left-0 flex justify-end items-center gap-x-2'>
             <Button size='xs' variant='link' className='lg:text-white' onClick={handleDimissVideo}>
               Descartar
             </Button>
