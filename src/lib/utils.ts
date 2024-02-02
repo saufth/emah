@@ -1,6 +1,7 @@
 import { clsx, type ClassValue } from 'clsx'
 import { twMerge } from 'tailwind-merge'
 import {
+  type Limits,
   type DocumentElementWithFullscreen,
   type DocumentWithFullscreen
 } from '@/types'
@@ -19,11 +20,6 @@ export function slugify (str: string) {
 
 export function absoluteUrl (path: string = '/') {
   return `${process.env.NEXT_PUBLIC_APP_URL}${path}`
-}
-
-export interface Limits {
-  min: number
-  max: number
 }
 
 export function limitsErrorMessage ({ min, max }: Limits) {

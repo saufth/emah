@@ -1,3 +1,8 @@
+export interface Limits {
+  min: number
+  max: number
+}
+
 export interface NavItem {
   title: string
   href: string
