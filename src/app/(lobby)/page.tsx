@@ -142,20 +142,20 @@ export default function IndexPage () {
             {services.items.map((item, key) => (
               <Card as='article' className='w-6-cols sm:w-8-cols lg:w-4-cols border bg-zinc-50 dark:bg-zinc-950 dark:border-zinc-700 py-1 px-1 sm:p-1' key={key}>
                 <div className='w-full h-full rounded-lg bg-gradient-to-t from-zinc-50 to-card dark:from-zinc-950 dark:to-muted pt-12 pb-16 px-8 sm:px-6 sm:pt-14 sm:pb-20'>
-                  <CardHeader>
+                  <CardHeader className='space-y-1.5 sm:space-y-2 lg:space-y-2'>
                     <Badge className='dark:bg-zinc-900' variant='outline'>
                       <span className='text-emah text-xs'>
                         {item.label}
                       </span>
                     </Badge>
-                    <h3 className='f-subhead-1 font-semibold'>
+                    <h3 className='f-subhead-2 font-semibold'>
                       {item.title}
                     </h3>
                   </CardHeader>
-                  <CardContent className='mt-spacing-4 px-2.5 py-5'>
+                  <CardContent className='mt-spacing-4 px-2.5'>
                     {typeof item.description === 'string'
                       ? (
-                        <p className='f-subhead-2'>
+                        <p className='f-subhead-3 font-bold'>
                           {item.description}
                         </p>
                         )
@@ -163,8 +163,8 @@ export default function IndexPage () {
                         <ul className='space-y-5'>
                           {item.description.map((description, key) => (
                             <li className='flex items-center gap-x-2' key={key}>
-                              <Icons.Doodle className='w-6 h-6 fill-emah' />
-                              <p className='f-subhead-2 text-muted-foreground'>
+                              <Icons.Doodle className='w-5 h-5 fill-emah' />
+                              <p className='f-subhead-3 font-bold text-muted-foreground'>
                                 {description}
                               </p>
                             </li>
