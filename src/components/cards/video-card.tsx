@@ -1,30 +1,51 @@
 'use client'
+import React from 'react'
 import { Button } from '@/components/ui/button'
-import { useState, useRef, type MouseEvent } from 'react'
 
 export default function Video () {
-  const [isVideo, setIsVideo] = useState<boolean>(true)
-  const videoRef = useRef<HTMLVideoElement>(null)
+  const [isVideo, setIsVideo] = React.useState<boolean>(true)
+  const videoRef = React.useRef<HTMLVideoElement>(null)
+
+  const handleFullScreenChange = () => {
+    const videoNode = videoRef.current
+    const isFullscreen = document.fullscreenElement
+
+    if (!isFullscreen) {
+      videoNode?.pause()
+    }
+  }
 
   const handleFullscreenVideo = () => {
     videoRef.current?.requestFullscreen()
+    videoRef.current?.play()
   }
 
   const handleDimissVideo = () => {
     setIsVideo(false)
   }
 
-  const preventContextMenu = (event: MouseEvent<HTMLVideoElement>) => event.preventDefault()
+  const preventContextMenu = (event: React.MouseEvent<HTMLVideoElement>) => event.preventDefault()
+
+  React.useEffect(() => {
+    const videoNode = videoRef.current
+
+    if (videoNode) {
+      videoNode.addEventListener('fullscreenchange', handleFullScreenChange)
+      return () => {
+        videoNode.removeEventListener('fullscreenchange', handleFullScreenChange)
+      }
+    }
+  }, [])
 
   return (
     <>
       {isVideo &&
-        <div className='fixed sm:right-4 xl:right-12 bottom-0 sm:bottom-4 xl:bottom-12 w-full sm:w-xs h-16 sm:h-auto border-t sm:border bg-white dark:bg-black overflow-hidden sm:rounded-[14px] z-10 flex items-center'>
+        <div className='fixed lg:right-4 xl:right-12 bottom-0 lg:bottom-4 xl:bottom-12 w-full lg:w-xs h-16 lg:h-auto border-t lg:border bg-white dark:bg-black overflow-hidden lg:rounded-[14px] z-10 flex items-center'>
           <video
-            className='w-auto sm:w-full sm:h-auto h-full sm:aspect-video relative'
+            className='w-auto lg:w-full lg:h-auto h-full lg:aspect-video relative'
             width={1920}
             height={1080}
-            controls
+            controls={false}
             poster='/images/placeholder.webp'
             disablePictureInPicture
             controlsList='nodownload noplaybackrate'
@@ -33,11 +54,11 @@ export default function Video () {
           >
             <source src='/video/emah.mp4' type='video/mp4' />
           </video>
-          <div className='w-full p-3 sm:absolute bottom-0 left-0 flex justify-end items-center gap-x-2 sm:hidden'>
-            <Button size='sm' variant='link' className='sm:text-white' onClick={handleDimissVideo}>
+          <div className='w-full p-3 lg:absolute bottom-0 left-0 flex justify-end items-center gap-x-2'>
+            <Button size='xs' variant='link' className='lg:text-white' onClick={handleDimissVideo}>
               Descartar
             </Button>
-            <Button size='sm' color='primary' className='sm:bg-white sm:text-black rounded-sm py-0.5 px-2.5' onClick={handleFullscreenVideo}>
+            <Button size='sm' color='primary' className='lg:bg-white lg:text-black rounded-lg py-0.5 px-2.5' onClick={handleFullscreenVideo}>
               Ver video
             </Button>
           </div>

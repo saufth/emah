@@ -141,7 +141,7 @@ export default function IndexPage () {
           <div className='cols-container gap-y-gutter mt-spacing-6'>
             {services.items.map((item, key) => (
               <Card as='article' className='w-6-cols sm:w-8-cols lg:w-4-cols border dark:bg-zinc-950 dark:border-zinc-700 py-1 px-1 sm:p-1' key={key}>
-                <div className='w-full h-full rounded-lg dark:bg-gradient-to-t dark:from-zinc-950 dark:to-muted py-12 px-8 sm:px-6 sm:py-14'>
+                <div className='w-full h-full rounded-lg dark:bg-gradient-to-t dark:from-zinc-950 dark:to-muted pt-12 pb-16 px-8 sm:px-6 sm:pt-14 sm:pb-20'>
                   <CardHeader>
                     <Badge className='dark:bg-zinc-900' variant='outline'>
                       <span className='text-emah text-xs'>
