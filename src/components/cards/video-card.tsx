@@ -16,6 +16,7 @@ export default function Video () {
   }
 
   const handleFullscreenVideo = () => {
+    alert('works')
     videoRef.current?.requestFullscreen()
     videoRef.current?.play()
   }
@@ -42,7 +43,7 @@ export default function Video () {
       {isVideo &&
         <div className='fixed lg:right-4 xl:right-12 bottom-0 lg:bottom-4 xl:bottom-12 w-full lg:w-xs h-16 lg:h-auto border-t lg:border bg-white dark:bg-black overflow-hidden lg:rounded-[14px] z-10 flex items-center'>
           <video
-            className='w-auto lg:w-full lg:h-auto h-full lg:aspect-video relative'
+            className='w-auto h-full lg:w-full lg:h-auto lg:aspect-video relative'
             width={1920}
             height={1080}
             controls={false}
@@ -54,7 +55,7 @@ export default function Video () {
           >
             <source src='/video/emah.mp4' type='video/mp4' />
           </video>
-          <div className='w-full p-3 lg:absolute bottom-0 left-0 flex justify-end items-center gap-x-2'>
+          <div className='w-full p-3 lg:absolute bottom-0 left-0 flex justify-end items-center gap-x-2 z-10'>
             <Button size='xs' variant='link' className='lg:text-white' onClick={handleDimissVideo}>
               Descartar
             </Button>
