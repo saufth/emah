@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Icons } from '@/components/icons'
 import { ModeToggle } from './mode-toggle'
+import SocialNav from '@/components/social-nav'
 import {
   useMotionValueEvent,
   useScroll
@@ -90,7 +91,7 @@ export default function SiteHeader () {
         <nav className='container mt-spacing-8'>
           {siteNav.map((navItem, key) => (
             <Button className='rounded-none w-full px-0 border-b first:border-t' variant='link' size='lg' asChild key={key}>
-              <Link className='flex justify-between' href={navItem.href} onClick={() => setIsMenuOpen(false)}>
+              <Link className='flex justify-between text-lg' href={navItem.href} onClick={() => setIsMenuOpen(false)}>
                 {navItem.title}
               </Link>
             </Button>
@@ -101,9 +102,12 @@ export default function SiteHeader () {
             <div className='text-sm sm:text-base text-muted-foreground'>
               Correo electrónico
             </div>
-            <Link className='text-base xl:text-lg' href={`mailto:${contactEmail}`} onClick={() => setIsMenuOpen(false)}>
+            <Link className='text-lg underline' href={`mailto:${contactEmail}`} onClick={() => setIsMenuOpen(false)}>
               {contactEmail}
             </Link>
+            <div className='mt-spacing-5'>
+              <SocialNav />
+            </div>
           </div>
           <ModeToggle />
         </div>

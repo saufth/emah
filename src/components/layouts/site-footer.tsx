@@ -5,6 +5,7 @@ import {
   siteConfig,
   siteNav
 } from '@/config/site'
+import SocialNav from '../social-nav'
 
 export default function SiteFooter () {
   return (
@@ -23,7 +24,7 @@ export default function SiteFooter () {
           <ul className='flex flex-col gap-3'>
             {siteNav.map((navItem, key) => (
               <li key={key}>
-                <Link className='text-base xl:text-lg' href={navItem.href}>
+                <Link className='text-lg' href={navItem.href}>
                   {navItem.title}
                 </Link>
               </li>
@@ -31,9 +32,15 @@ export default function SiteFooter () {
           </ul>
         </nav>
         <div className='mt-spacing-7 sm:mt-0'>
-          <Link className='text-base xl:text-lg underline' href={`mailto:${contactEmail}`}>
+          <div className='text-sm sm:text-base text-muted-foreground'>
+            Correo electrónico
+          </div>
+          <Link className='text-lg underline' href={`mailto:${contactEmail}`}>
             {contactEmail}
           </Link>
+          <div className='mt-spacing-4'>
+            <SocialNav />
+          </div>
         </div>
       </div>
     </footer>
