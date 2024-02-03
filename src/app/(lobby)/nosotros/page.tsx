@@ -48,7 +48,9 @@ export default function AboutPage () {
             </span>
           </h2>
           <p className='f-subhead-2 text-muted-foreground text-balanced mt-spacing-3'>
-            {culture.description}
+            El éxito a corto, mediano y largo plazo de cualquier empresa, no depende de un solo aspecto, sino de la
+            sincronización de muchos. Aquí te presentamos los más importantes para nosotros, mismos que forman parte
+            de nuestro ADN y que son la clave en la generación de <b>soluciones de valor para nuestros clientes</b>.
           </p>
         </div>
         <div className='cols-container gap-y-gutter mt-spacing-6'>
