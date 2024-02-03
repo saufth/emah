@@ -9,7 +9,7 @@ import SocialNav from '../social-nav'
 
 export default function SiteFooter () {
   return (
-    <footer className='mt-spacing-7 border-t pb-spacing-8 sm:pb-spacing-9 pt-spacing-3'>
+    <footer className='mt-spacing-7 border-t pb-spacing-8 sm:pb-spacing-9 pt-spacing-4'>
       <div className='container-sm sm:flex sm:justify-between'>
         <nav className='flex flex-col gap-4'>
           <div className='flex gap-x-2'>

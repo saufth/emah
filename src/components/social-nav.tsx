@@ -1,6 +1,9 @@
 import NextLink from 'next/link'
 import { Icons } from '@/components/icons'
 
+export const contactPhone = '4461012245'
+export const whatsappUrl = `https://wa.me/1${contactPhone}`
+
 export const socialIcons = [
   {
     title: 'Facebook',
@@ -21,12 +24,17 @@ export const socialIcons = [
     title: 'Linkedin',
     url: 'https://www.linkedin.com/in/emah-marketing-b58604264',
     Icon: () => <Icons.Linkedin className='w-7 h-7' />
+  },
+  {
+    title: 'Whatsapp',
+    url: whatsappUrl,
+    Icon: () => <Icons.Whatsapp className='w-[22px] h-[22px]' />
   }
 ]
 
 const SocialNav = () => {
   return (
-    <ul className='flex gap-x-4'>
+    <ul className='flex gap-x-3 items-center'>
       {socialIcons.map((social, key) => {
         return (
           <li key={key}>
@@ -34,7 +42,7 @@ const SocialNav = () => {
               href={social.url}
               aria-label={social.title}
               target='_blank'
-              rel='noopener'
+              rel='nooponer noreferrer'
             >
               <social.Icon />
               <span className='sr-only'>{social.title}</span>

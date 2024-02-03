@@ -9,6 +9,7 @@ import { cn } from '@/lib/utils'
 import { benefist, howWeMake } from '@/config/organization'
 import { siteConfig, siteNav } from '@/config/site'
 import { services } from '@/config/services'
+import { CallToAction } from '@/components/call-to-action'
 
 const contactLink = siteNav.find(({ href }) => href === '/contacto')!
 const aboutLink = siteNav.find(({ href }) => href === '/nosotros')!
@@ -41,12 +42,7 @@ export default function IndexPage () {
               </p>
             </div>
             <div className='w-full justify-center mt-2 sm:mt-4 flex flex-col sm:flex-row gap-4'>
-              <Button size='full' asChild>
-                <Link href={contactLink.href} className='font-semibold flex items-center gap-x-0.5'>
-                  {contactLink.title}
-                  <Icons.ArrowUpRight className='w-5 h-5 stroke-secondary' />
-                </Link>
-              </Button>
+              <CallToAction />
               <Button variant='ghost' size='full' asChild>
                 <Link href={aboutLink.href}>
                   {aboutLink.title}
