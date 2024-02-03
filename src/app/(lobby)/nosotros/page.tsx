@@ -2,14 +2,18 @@ import { type Metadata } from 'next'
 import Image from 'next/image'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { culture } from '@/config/organization'
-import { siteConfig } from '@/config/site'
+import { siteConfig, siteNav } from '@/config/site'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
+import { Icons } from '@/components/icons'
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
   title: `Nosotros – ${siteConfig.slogan}.`,
   description: siteConfig.description
 }
+
+const contactLink = siteNav.find(({ href }) => href === '/contacto')!
 
 export default function AboutPage () {
   return (
@@ -83,8 +87,11 @@ export default function AboutPage () {
             <b>Anti-Marketing</b> propone que un producto o servicio que realmente resuelva un problema de raíz y un branding dinámico es suficiente para <b>aportar valor</b> y asegurar la rentabilidad a largo plazo.
           </div>
           <div className='flex justify-center mx-auto mt-spacing-4'>
-            <Button className='mt-2 sm:mt-4' color='primary' size='full'>
-              Contáctanos
+            <Button size='full' asChild>
+              <Link href={contactLink.href} className='font-semibold flex items-center gap-x-0.5'>
+                {contactLink.title}
+                <Icons.ArrowUpRight className='w-5 h-5 stroke-secondary' />
+              </Link>
             </Button>
           </div>
         </div>

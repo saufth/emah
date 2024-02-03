@@ -21,7 +21,7 @@ export const siteNav = [
     href: '/consultoria'
   },
   {
-    title: 'Nosotros',
+    title: 'Acerca de nosotros',
     href: '/nosotros'
   },
   {
@@ -29,7 +29,7 @@ export const siteNav = [
     href: '/razon-de-ser'
   },
   {
-    title: 'Contáctanos',
+    title: 'Consultoría Gratuita',
     href: '/contacto'
   }
 ]

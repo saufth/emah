@@ -4,13 +4,16 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { filosophy, history } from '@/config/organization'
-import { siteConfig } from '@/config/site'
+import { siteConfig, siteNav } from '@/config/site'
+import { Icons } from '@/components/icons'
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
   title: `Razón de ser – ${siteConfig.slogan}.`,
   description: siteConfig.description
 }
+
+const contactLink = siteNav.find(({ href }) => href === '/contacto')!
 
 export default function ReazonPage () {
   return (
@@ -128,9 +131,10 @@ export default function ReazonPage () {
           </div>
         ))}
         <div className='pt-spacing-4'>
-          <Button className='sm:w-full' size='full' asChild>
-            <Link href='/contacto'>
-              Contáctanos
+          <Button size='full' asChild>
+            <Link href={contactLink.href} className='font-semibold flex items-center gap-x-0.5'>
+              {contactLink.title}
+              <Icons.ArrowUpRight className='w-5 h-5 stroke-secondary' />
             </Link>
           </Button>
         </div>

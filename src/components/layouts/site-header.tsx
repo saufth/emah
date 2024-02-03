@@ -12,8 +12,6 @@ import {
 import { cn } from '@/lib/utils'
 import { contactEmail, siteConfig, siteNav } from '@/config/site'
 
-const contactLink = siteNav.find(({ title }) => title === 'Contáctanos')!
-
 export default function SiteHeader () {
   const { scrollY } = useScroll()
   const [isOnTop, setIsOnTop] = React.useState(true)
@@ -61,8 +59,9 @@ export default function SiteHeader () {
                         asChild
                         key={key}
                       >
-                        <Link href={contactLink.href}>
-                          {contactLink.title}
+                        <Link href={navItem.href} className='font-semibold flex items-center gap-x-0.5'>
+                          {navItem.title}
+                          <Icons.ArrowUpRight className='w-5 h-5 stroke-secondary' />
                         </Link>
                       </Button>
                       )

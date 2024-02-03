@@ -7,8 +7,11 @@ import Meteors from '@/components/meteors'
 import Video from '@/components/cards/video-card'
 import { cn } from '@/lib/utils'
 import { benefist, howWeMake } from '@/config/organization'
-import { siteConfig } from '@/config/site'
+import { siteConfig, siteNav } from '@/config/site'
 import { services } from '@/config/services'
+
+const contactLink = siteNav.find(({ href }) => href === '/contacto')!
+const aboutLink = siteNav.find(({ href }) => href === '/nosotros')!
 
 export default function IndexPage () {
   return (
@@ -39,13 +42,14 @@ export default function IndexPage () {
             </div>
             <div className='w-full justify-center mt-2 sm:mt-4 flex flex-col sm:flex-row gap-4'>
               <Button size='full' asChild>
-                <Link href='/contacto'>
-                  Contáctanos
+                <Link href={contactLink.href} className='font-semibold flex items-center gap-x-0.5'>
+                  {contactLink.title}
+                  <Icons.ArrowUpRight className='w-5 h-5 stroke-secondary' />
                 </Link>
               </Button>
               <Button variant='ghost' size='full' asChild>
-                <Link href='/nosotros'>
-                  Conócenos
+                <Link href={aboutLink.href}>
+                  {aboutLink.title}
                 </Link>
               </Button>
             </div>
@@ -185,9 +189,10 @@ export default function IndexPage () {
             necesaria para lanzar tu nuevo negocio competitivo y rentable al mundo.
           </div>
           <div className='flex justify-center mx-auto mt-spacing-4'>
-            <Button className='mt-2 sm:mt-4' color='primary' size='full' asChild>
-              <Link href='/contacto'>
-                Contáctanos
+            <Button size='full' asChild>
+              <Link href={contactLink.href} className='font-semibold flex items-center gap-x-0.5'>
+                {contactLink.title}
+                <Icons.ArrowUpRight className='w-5 h-5 stroke-secondary' />
               </Link>
             </Button>
           </div>
