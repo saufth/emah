@@ -3,9 +3,9 @@ import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { Icons } from '@/components/icons'
 import { cn } from '@/lib/utils'
-import { type ServiceCardProps } from '@/types'
+import { type CardDataProps } from '@/types'
 
-export function ServiceCard ({ card, className, ...props }: ServiceCardProps) {
+export function ServiceCard ({ card, className, ...props }: CardDataProps) {
   return (
     <Card
       as='article'

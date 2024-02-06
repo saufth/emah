@@ -79,7 +79,7 @@ export interface Category extends ItemWithOptionalImage {
 }
 export type Categories = Category[]
 
-export interface InfoCardProps extends CardProps {
+export interface CardDataProps extends CardProps {
   card: ItemWithOptionalImage
 }
 
