@@ -24,12 +24,9 @@ import { toast } from 'sonner'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { PaperPlaneIcon } from '@radix-ui/react-icons'
 import { useForm } from 'react-hook-form'
-import * as z from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { contactEmailSchema } from '@/lib/validations/email'
+import { type Inputs, contactEmailSchema } from '@/lib/validations/email'
 import { services } from '@/config/services'
-
-type Inputs = z.infer<typeof contactEmailSchema>
 
 const recaptchaSitekey = String(process.env.NEXT_PUBLIC_RECAPTCHA_SITE)
 
@@ -41,7 +38,7 @@ export default function ContactForm () {
     defaultValues: {
       name: '',
       email: '',
-      category: services.items[0]!.title,
+      category: services[0]!.title,
       subject: ''
     }
   })
@@ -141,7 +138,7 @@ export default function ContactForm () {
                 </FormControl>
                 <SelectContent>
                   <SelectGroup>
-                    {services.items.map(
+                    {services.map(
                       (service) => (
                         <SelectItem
                           key={service.title}

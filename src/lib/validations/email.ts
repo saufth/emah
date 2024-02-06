@@ -42,3 +42,5 @@ export const contactEmailSchema = z.object({
     .min(subjectLimits.min, { message: subjectLimitsErrorMessage })
     .max(subjectLimits.max, { message: subjectLimitsErrorMessage })
 })
+
+export type Inputs = z.infer<typeof contactEmailSchema>
