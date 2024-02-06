@@ -50,6 +50,7 @@ export interface Slugable {
 export type SlugableOptional = Partial<Slugable>
 
 export type NavItem = Title & Hyperlink
+export type NavList = NavItem[]
 export interface NavItemWithChildren extends NavItem {
   items: NavItemWithChildren[]
 }
