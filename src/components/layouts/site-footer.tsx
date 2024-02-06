@@ -1,11 +1,9 @@
-import Link from 'next/link'
+import NextLink from 'next/link'
+import { CallToAction } from '@/components/call-to-action'
 import { Icons } from '@/components/icons'
-import {
-  contactEmail,
-  siteConfig,
-  siteNav
-} from '@/config/site'
-import SocialNav from '../social-nav'
+import { Link } from '@/components/ui/link'
+import SocialNav from '@/components/social-nav'
+import { contactEmail, siteConfig, siteNav } from '@/config/site'
 
 export default function SiteFooter () {
   return (
@@ -13,20 +11,26 @@ export default function SiteFooter () {
       <div className='container-sm sm:flex sm:justify-between'>
         <nav className='flex flex-col gap-4'>
           <div className='flex gap-x-2'>
-            <Link href='/'>
+            <NextLink href='/'>
               <Icons.Logoname className='w-auto h-6 sm:h-7 fill-primary first:[&>path]:fill-emah' />
               <span className='sr-only'>{siteConfig.name}</span>
-            </Link>
+            </NextLink>
             <span className='text-lg leading-none sm:text-xl sm:leading-none text-bold'>
               {`© ${new Date().getFullYear()}`}
             </span>
           </div>
-          <ul className='flex flex-col gap-3'>
+          <ul className='flex flex-col gap-y-3 sm:gap-y-4'>
             {siteNav.map((navItem, key) => (
               <li key={key}>
-                <Link className='text-lg' href={navItem.href}>
-                  {navItem.title}
-                </Link>
+                {key < siteNav.length - 1
+                  ? (
+                    <Link href={navItem.href} className='text-base lg:text-lg'>
+                      {navItem.title}
+                    </Link>
+                    )
+                  : (
+                    <CallToAction className='mt-1.5' size='default' />
+                    )}
               </li>
             ))}
           </ul>
@@ -35,7 +39,7 @@ export default function SiteFooter () {
           <div className='text-sm sm:text-base text-muted-foreground'>
             Correo electrónico
           </div>
-          <Link className='text-lg underline' href={`mailto:${contactEmail}`}>
+          <Link className='text-lg lg:text-xl underline px-0' href={`mailto:${contactEmail}`}>
             {contactEmail}
           </Link>
           <div className='mt-spacing-4'>

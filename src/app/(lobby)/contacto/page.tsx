@@ -5,7 +5,7 @@ import { siteConfig } from '@/config/site'
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
-  title: `Contáctanos – ${siteConfig.slogan}.`,
+  title: 'Contáctanos',
   description: siteConfig.description
 }
 

@@ -1,3 +1,5 @@
+import { type CardProps } from '@/components/ui/card'
+
 export interface Limits {
   min: number
   max: number
@@ -34,6 +36,8 @@ export interface Item {
 
 export type ItemWithOptionalDescription = Pick<Item, 'title' | 'label' | 'image'> & Partial<Pick<Item, 'description'>>
 
+export type ItemWithOptionalImage = Pick<Item, 'title' | 'description' | 'label'> & Partial<Pick<Item, 'image'>>
+
 export type ItemWithOptionalContent = Pick<Item, 'title' | 'label'> & Partial<Pick<Item, 'description' | 'image'>>
 
 export interface Article extends ItemWithOptionalContent {
@@ -51,6 +55,14 @@ export interface Subcategory extends ItemWithOptionalContent {
 
 export interface Category extends ItemWithOptionalContent {
   items: Subcategory[]
+}
+
+export interface InfoCardProps extends CardProps {
+  card: ItemWithOptionalContent
+}
+
+export interface ServiceCardProps extends CardProps {
+  card: ItemWithOptionalImage
 }
 
 export interface DocumentWithFullscreen extends Document {

@@ -1,15 +1,14 @@
 'use client'
 import React from 'react'
 import NextLink from 'next/link'
-import { Button } from '@/components/ui/button'
+import { CallToAction } from '../call-to-action'
 import { Icons } from '@/components/icons'
+import { Link } from '@/components/ui/link'
 import { ModeToggle } from './mode-toggle'
 import SocialNav, { whatsappUrl } from '@/components/social-nav'
 import { useMotionValueEvent, useScroll } from 'framer-motion'
 import { cn } from '@/lib/utils'
 import { contactEmail, siteConfig, siteNav } from '@/config/site'
-import { CallToAction } from '../call-to-action'
-import { Link } from '../ui/link'
 
 export default function SiteHeader () {
   const { scrollY } = useScroll()
@@ -42,9 +41,9 @@ export default function SiteHeader () {
                   <span className='sr-only'>{siteConfig.name} home</span>
                 </NextLink>
               </div>
-              <div className='flex items-center gap-x-3'>
-                <div className='hidden lg:flex items-center gap-x-3'>
-                  <ul className='flex items-center gap-x-3'>
+              <div className='flex items-center gap-x-5'>
+                <div className='hidden lg:flex items-center gap-x-5'>
+                  <ul className='flex items-center gap-x-5'>
                     {siteNav.map((navItem, key) => (
                       <li key={key} className='last:hidden'>
                         <Link href={navItem.href} className='hidden lg:flex px-1 font-semibold' variant='link'>
@@ -53,11 +52,11 @@ export default function SiteHeader () {
                       </li>
                     ))}
                   </ul>
+                  <CallToAction className='hidden lg:flex' size='default' />
                   <Link href={whatsappUrl} target='_blank' rel='nooponer noreferrer'>
                     <Icons.WhatsappOutlined className='w-7 h-7' />
                     <span className='sr-only'>Whatsapp</span>
                   </Link>
-                  <CallToAction className='hidden lg:flex' size='default' />
                 </div>
                 <div className='block lg:hidden'>
                   <div className='block lg:hidden w-8 h-2.5 relative [&>span]:transition-all [&>span]:duration-300' onClick={toggleMenu}>
@@ -80,29 +79,35 @@ export default function SiteHeader () {
           isMenuOpen && 'h-[100dvh]'
         )}
       >
-        <nav className='container mt-spacing-8'>
+        <ul className='container mt-spacing-8'>
           {siteNav.map((navItem, key) => (
-            <Button className='rounded-none w-full px-0 border-b first:border-t' variant='link' size='lg' asChild key={key}>
-              <NextLink className='flex justify-between text-lg' href={navItem.href} onClick={() => setIsMenuOpen(false)}>
+            <li key={key}>
+              <Link
+                className='flex justify-between text-lg rounded-none w-full px-0 py-2.5 sm:py-2.5 border-b first:border-t'
+                href={navItem.href}
+                onClick={() => setIsMenuOpen(false)}
+              >
                 {navItem.title}
-                <Icons.ArrowRight className='w-4 h-4' />
-              </NextLink>
-            </Button>
+                <Icons.ArrowRight className='w-5 h-5' />
+              </Link>
+            </li>
           ))}
-        </nav>
+        </ul>
         <div className='container pb-8 flex justify-between items-end'>
           <div>
             <div className='text-sm sm:text-base text-muted-foreground'>
               Correo electrónico
             </div>
-            <NextLink className='text-lg underline' href={`mailto:${contactEmail}`} onClick={() => setIsMenuOpen(false)}>
+            <Link className='px-0 text-lg' href={`mailto:${contactEmail}`} onClick={() => setIsMenuOpen(false)}>
               {contactEmail}
-            </NextLink>
+            </Link>
             <div className='mt-spacing-5'>
               <SocialNav />
             </div>
           </div>
-          <ModeToggle />
+          <div>
+            <ModeToggle />
+          </div>
         </div>
       </div>
     </>

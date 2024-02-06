@@ -24,11 +24,13 @@ const CardHeader = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn('w-full space-y-3 sm:space-y-4 lg:space-y-5', className)}
+    className={cn('w-full space-y-2', className)}
     {...props}
   />
 ))
 CardHeader.displayName = 'CardHeader'
+
+type CardProps = React.ComponentProps<typeof Card>
 
 const CardTitle = React.forwardRef<
   HTMLParagraphElement,
@@ -42,6 +44,8 @@ const CardTitle = React.forwardRef<
 ))
 CardTitle.displayName = 'CardTitle'
 
+type CardTitleProps = React.ComponentProps<typeof CardTitle>
+
 const CardDescription = React.forwardRef<
   HTMLParagraphElement,
   React.HTMLAttributes<HTMLParagraphElement>
@@ -54,6 +58,8 @@ const CardDescription = React.forwardRef<
 ))
 CardDescription.displayName = 'CardDescription'
 
+type CardDescriptionProps = React.ComponentProps<typeof CardDescription>
+
 const CardContent = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
@@ -61,6 +67,8 @@ const CardContent = React.forwardRef<
   <div ref={ref} className={cn('w-full', className)} {...props} />
 ))
 CardContent.displayName = 'CardContent'
+
+type CardContentProps = React.ComponentProps<typeof CardContent>
 
 const CardFooter = React.forwardRef<
   HTMLDivElement,
@@ -74,4 +82,18 @@ const CardFooter = React.forwardRef<
 ))
 CardFooter.displayName = 'CardFooter'
 
-export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent }
+type CardFooterProps = React.ComponentProps<typeof CardFooter>
+
+export {
+  Card,
+  CardHeader,
+  CardFooter,
+  CardTitle,
+  CardDescription,
+  CardContent,
+  type CardProps,
+  type CardTitleProps,
+  type CardDescriptionProps,
+  type CardContentProps,
+  type CardFooterProps
+}

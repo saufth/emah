@@ -17,10 +17,10 @@ export function ModeToggle () {
       <DropdownMenuTrigger asChild>
         <Button
           variant='ghost'
-          className='group ring-0.5 focus-visible:ring-0.5 h-10 px-3 lg:px-2'
+          className='group h-10 px-0 lg:px-0 bg-transparent focus-visible:ring-0 hover:bg-transparent ring-0 border-0'
         >
-          <Icons.Sun className='w-4 lg:w-5 h-auto rotate-0 scale-100 transition-all duration-500 dark:-rotate-90 dark:scale-0 fill-primary' />
-          <Icons.Moon className='w-4 lg:w-5 h-auto absolute rotate-90 scale-0 transition-all duration-500 dark:rotate-0 dark:scale-100 fill-primary' />
+          <Icons.Sun className='w-6 h-auto rotate-0 scale-100 transition-all duration-500 dark:-rotate-90 dark:scale-0' />
+          <Icons.Moon className='w-6 h-auto absolute rotate-90 scale-0 transition-all duration-500 dark:rotate-0 dark:scale-100' />
           <span className='sr-only'>Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>

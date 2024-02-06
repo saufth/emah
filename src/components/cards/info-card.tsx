@@ -1,66 +1,42 @@
 import React from 'react'
-import Image from 'next/image'
-import Balancer from 'react-wrap-balancer'
-import { Badge } from '@/components/ui/badge'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle
-} from '@/components/ui/card'
-import { type Item } from '@/types'
+import { Card, CardContent, CardHeader } from '@/components/ui/card'
+import { cn } from '@/lib/utils'
+import { type InfoCardProps } from '@/types'
 
-interface ArticleCardProps extends React.HTMLAttributes<HTMLDivElement> {
-    article: Item
-}
-
-export function InfoCard ({ article, ...props }: ArticleCardProps) {
+export function InfoCard ({ card, className, ...props }: InfoCardProps) {
   return (
-    <Card as='article' {...props}>
-      <CardHeader>
-        <div className='space-y-1'>
-          {article.label && <Badge>{article.label}</Badge>}
-          <CardTitle as='h3'>
-            <Balancer className='text-h3 text-card-foreground'>
-              {article.title}
-            </Balancer>
-          </CardTitle>
-        </div>
-        {typeof article.description === 'object'
-          ? (
-            <ul className='space-y-1 list-disc marker:text-card-foreground pl-4'>
-              {article.description.map((paragraph, key) => (
-                <li key={key}>
-                  <CardDescription>
-                    <Balancer className='text-p3 text-card-foreground'>
-                      {paragraph}
-                    </Balancer>
-                  </CardDescription>
-                </li>
-              ))}
-            </ul>
-            )
-          : (
-            <CardDescription>
-              <Balancer className='text-p3 text-card-foreground'>
-                {article.description}
-              </Balancer>
-            </CardDescription>
+    <Card
+      as='article'
+      className={cn(
+        'border dark:bg-zinc-950 dark:border-zinc-700 py-1 px-1 sm:p-1',
+        className
+      )}
+      {...props}
+    >
+      <div className='w-full h-full rounded-lg dark:bg-gradient-to-t dark:from-zinc-950 dark:to-muted py-10 px-8 sm:py-12'>
+        <CardHeader>
+          <h3 className='f-subhead-2 font-semibold'>
+            {card.title}
+          </h3>
+        </CardHeader>
+        <CardContent className='mt-spacing-2'>
+          {typeof card.description === 'string'
+            ? (
+              <p className='f-body-1 text-muted-foreground'>
+                {card.description}
+              </p>
+              )
+            : card.description && (
+              <>
+                {card.description.map((description, key) => (
+                  <p className='f-body-1 text-muted-foreground mt-spacing-2' key={key}>
+                    {description}
+                  </p>
+                ))}
+              </>
             )}
-      </CardHeader>
-      <CardContent>
-        <div className='aspect-[308/173] overflow-hidden rounded-xl bg-primary relative'>
-          <Image
-            src={article.image.src}
-            alt={article.image.alt}
-            className='object-cover'
-            sizes='(min-width: 1024px) 20vw, (min-width: 768px) 25vw, (min-width: 640px) 33vw, (min-width: 475px) 50vw, 100vw'
-            fill
-            loading='lazy'
-          />
-        </div>
-      </CardContent>
+        </CardContent>
+      </div>
     </Card>
   )
 }

@@ -17,7 +17,7 @@ export const author: Author = {
 
 export const siteNav = [
   {
-    title: 'Soluciones',
+    title: 'Nuestras soluciones',
     href: '/soluciones'
   },
   {
@@ -40,7 +40,7 @@ export const contactEmail = `contacto@${domain}`
 export const siteConfig: SiteConfig = {
   name: 'Emah',
   description: 'Impulsamos a emprendedores y empresarios a consolidar su modelo de negocio, ofreciendo productos intangibles de alto valor agregado para sus clientes',
-  slogan: 'No necesitas más marketing',
+  slogan: 'Endless Possibilities',
   url: `https://${domain}`,
   author,
   mainNav: [

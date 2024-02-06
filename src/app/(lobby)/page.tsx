@@ -1,18 +1,14 @@
-import Link from 'next/link'
 import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
+import { CallToAction, CallToAbout, CallToServices, CallToPurpose } from '@/components/call-to-action'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { Icons } from '@/components/icons'
+import { SimpleCard } from '@/components/cards/simple-card'
+import { ServiceCard } from '@/components/cards/service-card'
 import Meteors from '@/components/meteors'
 import Video from '@/components/cards/video-card'
 import { cn } from '@/lib/utils'
 import { benefist, howWeMake } from '@/config/organization'
-import { siteConfig, siteNav } from '@/config/site'
 import { services } from '@/config/services'
-import { CallToAction } from '@/components/call-to-action'
-
-const contactLink = siteNav.find(({ href }) => href === '/contacto')!
-const aboutLink = siteNav.find(({ href }) => href === '/nosotros')!
 
 export default function IndexPage () {
   return (
@@ -33,7 +29,7 @@ export default function IndexPage () {
                 <span className='relative'>
                   <Icons.Doodle className='w-auto h-20 sm:h-28 lg:h-32 fill-emah absolute top-1 lg:top-2 my-auto -left-9 sm:-left-16 lg:-left-16 -z-10' />
                   <span className='text-gradient'>
-                    {siteConfig.slogan}
+                    No necesitas más marketing
                   </span>
                 </span>
               </h1>
@@ -43,11 +39,7 @@ export default function IndexPage () {
             </div>
             <div className='w-full justify-center mt-2 sm:mt-4 flex flex-col sm:flex-row gap-4'>
               <CallToAction />
-              <Button variant='ghost' size='full' asChild>
-                <Link href={aboutLink.href}>
-                  {aboutLink.title}
-                </Link>
-              </Button>
+              <CallToAbout />
             </div>
           </div>
         </section>
@@ -55,71 +47,59 @@ export default function IndexPage () {
           <div className='text-center'>
             <h2>
               <span className='f-heading-1 font-bold text-gradient'>
-                {howWeMake.title}
+                ¿Cómo lo hacemos?
               </span>
             </h2>
             <p className='max-w-3xl mx-auto f-subhead-2 text-muted-foreground text-balanced mt-spacing-3'>
-              {howWeMake.description}
+              Transformamos aquello que te hace único en <b>soluciones concretas</b> y de constante <b>valor agregado para el mercado</b>.
             </p>
           </div>
           <div className='cols-container gap-y-gutter mt-spacing-5'>
-            {howWeMake.items.map((item, key) => {
+            {howWeMake.map((item, key) => {
               const iconStyles = ['[&>#nodes]:hidden [&>#vertex]:hidden', '[&>#vertex]:hidden', '']
 
               return (
                 <Card as='article' className='w-6-cols sm:w-1/3-cols lg:w-4-cols border dark:border-zinc-700 dark:bg-zinc-950 px-0 py-0 sm:p-0' key={key}>
                   <div className='w-full h-full rounded-[9px]'>
-                    <CardHeader>
+                    <CardContent>
                       <div className='w-full p-8 md:p-10 lg:p-12'>
                         <Icons.Proposal className={cn('w-full h-auto fill-emah', iconStyles[key])} />
                       </div>
-                    </CardHeader>
-                    <CardContent className='space-y-2 p-4'>
+                    </CardContent>
+                    <CardHeader className='p-4'>
                       <h3 className='f-heading-3 font-semibold'>
                         {item.title}
                       </h3>
-                      <p className='f-body-1 text-muted-foreground'>
+                      <p className='f-body-1 text-muted-foreground mt-spacing-2'>
                         {item.description}
                       </p>
-                    </CardContent>
+                    </CardHeader>
                   </div>
                 </Card>
               )
             })}
           </div>
           <div className='cols-container gap-y-gutter mt-gutter'>
-            {benefist.items.map((item, key) => (
-              <Card as='article' className='w-6-cols sm:w-1/3-cols lg:w-4-cols border dark:border-zinc-700 dark:bg-zinc-900 px-4 py-4 sm:p-4' key={key}>
-                <div className='w-full h-full rounded-[9px]'>
-                  <CardHeader>
-                    <h3 className='f-subhead-2 font-semibold'>
-                      {item.title}
-                    </h3>
-                  </CardHeader>
-                  <CardContent className='mt-spacing-2'>
-                    <p className='f-body-1 text-muted-foreground'>
-                      {item.description}
-                    </p>
-                  </CardContent>
-                </div>
-              </Card>
+            {benefist.map((item, key) => (
+              <SimpleCard className='w-6-cols sm:w-1/3-cols lg:w-4-cols' card={item} key={key} />
             ))}
             <Card as='article' className='w-6-cols sm:w-2/3-cols lg:w-8-cols border dark:border-zinc-700 dark:bg-zinc-950'>
               <div className='w-full h-full rounded-[9px]'>
                 <CardHeader className='h-full flex items-center'>
                   <h3>
-                    <span className='f-subhead-2 font-thin'>
-                      {benefist.title}
+                    <span className='f-subhead-2 font-extralight'>
+                      Siguiendo nuestra metologia de trabajo, no solo podras <b>definir con claridad tu propuesta de valor</b>,
+                      sino que tambien la podras integrar e implementar de forma efectiva y eficiente, logrando asi
+                      construir una <b>base solida para el exito</b> de tu empresa o negocio.
                     </span>
                   </h3>
                 </CardHeader>
-                {/* <CardContent className='mt-spacing-2'>
-                  <p className='f-subhead-3 text-balanced'>
-                    {benefist.description}
-                  </p>
-                </CardContent> */}
               </div>
             </Card>
+          </div>
+          <div className='w-full justify-center mt-spacing-5 flex flex-col sm:flex-row gap-4'>
+            <CallToAction />
+            <CallToPurpose />
           </div>
         </section>
         <div className='w-full h-1/2 absolute top-0 -z-10 overflow-hidden'>
@@ -131,49 +111,18 @@ export default function IndexPage () {
           <div className='text-center'>
             <h2 className='text-balanced'>
               <span className='f-heading-1 font-bold text-gradient'>
-                {services.title}
+                Planes a la medida de tus necesidades
               </span>
             </h2>
             <p className='mx-auto f-subhead-2 text-muted-foreground text-balanced mt-spacing-4'>
-              El <b>anti-marketing</b> es el marketing que <b>pone al cliente en primer lugar</b>. En lugar de gastar dinero en publicidad, se enfoca en crear productos y servicios que tus clientes quieran compartir con sus amigos y familiares.
+              El <b>anti-marketing</b> es el marketing que pone al <b>cliente en primer lugar</b>.
+              En lugar de gastar dinero en publicidad, se enfoca en crear productos y servicios
+              que tus clientes quieran compartir con sus amigos y familiares.
             </p>
           </div>
           <div className='cols-container gap-y-gutter mt-spacing-6'>
-            {services.items.map((item, key) => (
-              <Card as='article' className='w-6-cols sm:w-8-cols lg:w-4-cols border bg-zinc-50 dark:bg-zinc-950 dark:border-zinc-700 py-1 px-1 sm:p-1' key={key}>
-                <div className='w-full h-full rounded-lg bg-gradient-to-t from-zinc-50 to-card dark:from-zinc-950 dark:to-muted pt-12 pb-16 px-8 sm:px-6 sm:pt-14 sm:pb-20'>
-                  <CardHeader className='space-y-1.5 sm:space-y-2 lg:space-y-2'>
-                    <Badge className='dark:bg-zinc-900' variant='outline'>
-                      <span className='text-emah text-xs'>
-                        {item.label}
-                      </span>
-                    </Badge>
-                    <h3 className='f-subhead-2 font-semibold'>
-                      {item.title}
-                    </h3>
-                  </CardHeader>
-                  <CardContent className='mt-spacing-4 px-2.5'>
-                    {typeof item.description === 'string'
-                      ? (
-                        <p className='f-subhead-3 font-bold'>
-                          {item.description}
-                        </p>
-                        )
-                      : item.description && (
-                        <ul className='space-y-5'>
-                          {item.description.map((description, key) => (
-                            <li className='flex items-center gap-x-2' key={key}>
-                              <Icons.Doodle className='w-5 h-5 fill-emah' />
-                              <p className='f-subhead-3 font-bold text-muted-foreground'>
-                                {description}
-                              </p>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                  </CardContent>
-                </div>
-              </Card>
+            {services.map((item, key) => (
+              <ServiceCard className='w-6-cols sm:w-8-cols lg:w-4-cols' card={item} key={key} />
             )
             )}
           </div>
@@ -184,13 +133,9 @@ export default function IndexPage () {
             estructurar tus precios, diseñamos los materiales impresos o digitales y <b>desarrollamos la marca</b>{' '}
             necesaria para lanzar tu nuevo negocio competitivo y rentable al mundo.
           </div>
-          <div className='flex justify-center mx-auto mt-spacing-4'>
-            <Button size='full' asChild>
-              <Link href={contactLink.href} className='font-semibold flex items-center gap-x-0.5'>
-                {contactLink.title}
-                <Icons.ArrowUpRight className='w-5 h-5 stroke-secondary' />
-              </Link>
-            </Button>
+          <div className='w-full justify-center mt-spacing-5 flex flex-col sm:flex-row gap-4'>
+            <CallToAction />
+            <CallToServices />
           </div>
         </div>
       </section>

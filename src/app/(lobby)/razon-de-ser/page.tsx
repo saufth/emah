@@ -1,19 +1,15 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
+import { CallToAction, CallToServices } from '@/components/call-to-action'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { filosophy, history } from '@/config/organization'
-import { siteConfig, siteNav } from '@/config/site'
-import { Icons } from '@/components/icons'
+import { siteConfig } from '@/config/site'
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
-  title: `Razón de ser – ${siteConfig.slogan}.`,
+  title: 'Razón de ser',
   description: siteConfig.description
 }
-
-const contactLink = siteNav.find(({ href }) => href === '/contacto')!
 
 export default function ReazonPage () {
   return (
@@ -23,7 +19,7 @@ export default function ReazonPage () {
           <div className='text-center'>
             <h1 className='f-display-3 text-balanced'>
               <span className='text-gradient'>
-                Generar estrategias 100% enfocadas en las necesidades reales del cliente
+                Generamos estrategias 100% enfocadas en las necesidades reales del cliente
               </span>
             </h1>
           </div>
@@ -44,15 +40,17 @@ export default function ReazonPage () {
         <div className='text-center'>
           <h2>
             <span className='f-heading-1 font-bold text-gradient'>
-              {filosophy.title}
+              ¿Qué nos diferencia?
             </span>
           </h2>
           <p className='f-subhead-2 text-muted-foreground text-balanced mt-spacing-3'>
-            {filosophy.description}
+            Un buen producto se define por una serie de características y cualidades que lo hacen
+            deseable, útil y valioso para los consumidores. Aquí están algunos de los
+            elementos clave que definen un buen producto.
           </p>
         </div>
         <div className='cols-container gap-y-gutter mt-spacing-6'>
-          {filosophy.items.map((item, key) => (
+          {filosophy.map((item, key) => (
             <Card as='article' className='w-6-cols sm:w-8-cols lg:w-4-cols border dark:bg-zinc-950 dark:border-zinc-700 py-1 px-1 sm:p-1' key={key}>
               <div className='w-full h-full rounded-lg dark:bg-gradient-to-t dark:from-zinc-950 dark:to-muted py-6 px-8 sm:p-8'>
                 <CardHeader>
@@ -130,13 +128,9 @@ export default function ReazonPage () {
             </div>
           </div>
         ))}
-        <div className='pt-spacing-4'>
-          <Button size='full' asChild>
-            <Link href={contactLink.href} className='font-semibold flex items-center gap-x-0.5'>
-              {contactLink.title}
-              <Icons.ArrowUpRight className='w-5 h-5 stroke-secondary' />
-            </Link>
-          </Button>
+        <div className='w-full justify-center mt-spacing-5 flex flex-col sm:flex-row gap-4'>
+          <CallToAction />
+          <CallToServices />
         </div>
       </section>
     </>
