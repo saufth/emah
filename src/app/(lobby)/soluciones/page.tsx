@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function SolucionesPage () {
   return (
-    <section>
+    <section className='container'>
       <h1>En construción..</h1>
     </section>
   )
