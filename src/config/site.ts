@@ -1,21 +1,12 @@
 import { type Author } from 'next/dist/lib/metadata/types/metadata-types'
-import { type MainNavItem } from '@/types'
-
-interface SiteConfig {
-  name: string,
-  description: string,
-  slogan?: string,
-  url: URL | string,
-  author: Author,
-  mainNav: MainNavItem[]
-}
+import { type Navigable, type SiteConfig } from '@/types'
 
 export const author: Author = {
   name: 'saufth',
   url: 'https://github.com/saufth'
 }
 
-export const siteNav = [
+export const siteNav: Navigable = [
   {
     title: 'Nuestras soluciones',
     href: '/soluciones'

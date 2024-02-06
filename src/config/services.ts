@@ -1,6 +1,6 @@
-import { type ItemWithOptionalImage } from '@/types'
+import { type HeadingWithLabel } from '@/types'
 
-export const services: ItemWithOptionalImage[] = [
+export const services: HeadingWithLabel[] = [
   {
     title: 'Emprender con Éxito',
     description: [

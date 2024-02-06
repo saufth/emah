@@ -1,6 +1,6 @@
-import { type ItemWithOptionalContent, type Section } from '@/types'
+import { type HeadingWithImage, type Heading, type Section } from '@/types'
 
-export const howWeMake: ItemWithOptionalContent[] = [
+export const howWeMake: Heading[] = [
   {
     title: 'Define',
     description: 'Comprender a fondo las necesidades y deseos de tu audiencia. Investigar e identificar los problemas y aspiraciones que tu producto o servicio puede ofrecer.'
@@ -15,7 +15,7 @@ export const howWeMake: ItemWithOptionalContent[] = [
   }
 ]
 
-export const benefist: ItemWithOptionalContent[] = [
+export const benefist: Heading[] = [
   {
     title: 'Captura la atención de una audiencia específica',
     description: 'La gente odia los anuncios, estos tienden a exagerar y están por todas partes. Al romper con la norma, tu marca se destaca entre la multitud y tus ventas aumentan.'
@@ -34,7 +34,7 @@ export const benefist: ItemWithOptionalContent[] = [
   }
 ]
 
-export const filosophy: ItemWithOptionalContent[] = [
+export const filosophy: Heading[] = [
   {
     title: 'Satisfacción',
     description: 'Un buen producto debe satisfacer las necesidades o resolver los problemas de los clientes de manera efectiva. Debe abordar una demanda o una preocupación real en el mercado.'
@@ -85,7 +85,7 @@ export const filosophy: ItemWithOptionalContent[] = [
   }
 ]
 
-export const culture: ItemWithOptionalContent[] = [
+export const culture: HeadingWithImage[] = [
   {
     title: 'No asumimos',
     description: [
