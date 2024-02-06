@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "homepage": "https://emah.mx/",
-  "description": "Distribuidora Potencia official website",
+  "description": "Emah official website",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
