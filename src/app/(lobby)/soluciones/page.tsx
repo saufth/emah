@@ -1,7 +1,7 @@
 export function SolucionesPage () {
   return (
-    <div>
+    <section>
       <h1>En construción..</h1>
-    </div>
+    </section>
   )
 }
