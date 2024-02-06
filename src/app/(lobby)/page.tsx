@@ -14,7 +14,7 @@ export default function IndexPage () {
   return (
     <>
       <div className='dark:bg-gradient-to-b dark:from-black dark:via-zing-950 dark:to-background relative z-10'>
-        <section className='mt-spacing-4 pb-spacing-8 relative z-10'>
+        <section className='pb-spacing-8 relative z-10'>
           <div className='container-sm mx-auto flex flex-col items-center gap-y-8'>
             <Badge className='mt-spacing-6' variant='secondary'>
               <div className='flex gap-x-1 items-center'>
