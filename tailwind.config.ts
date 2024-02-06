@@ -48,9 +48,6 @@ const config: Config = {
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans]
       },
-      fontSize: {
-        h1: 'clamp(2.6rem,4vw,4.2rem)'
-      },
       colors: {
         emah: 'oklch(67.59% 0.217 38.8)', /* #FF5500 */
         primary: {
@@ -107,10 +104,6 @@ const config: Config = {
       },
       height: breakpoints,
       inset: breakpoints,
-      // margin: {
-      //   '1-cols': 'calc(((((1 / var(--container-grid-columns, var(--grid-columns))) * 100%) - (var(--inner-gutter) - (1 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter)))) + var(--inner-gutter)))',
-      //   '2-cols': 'calc(((((2 / var(--container-grid-columns, var(--grid-columns))) * 100%) - (var(--inner-gutter) - (2 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter)))) + var(--inner-gutter)))'
-      // },
       maxWidth: {
         '8xl': breakpoints['8xl'],
         '9xl': breakpoints['9xl']
