@@ -1,9 +1,9 @@
 import React from 'react'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
-import { type InfoCardProps } from '@/types'
+import { type CardDataProps } from '@/types'
 
-export function SimpleCard ({ card, className, ...props }: InfoCardProps) {
+export function SimpleCard ({ card, className, ...props }: CardDataProps) {
   return (
     <Card
       as='article'
