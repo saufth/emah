@@ -5,10 +5,10 @@ import { CallToAction } from '../call-to-action'
 import { Icons } from '@/components/icons'
 import { Link } from '@/components/ui/link'
 import { ModeToggle } from './mode-toggle'
-import SocialNav, { whatsappUrl } from '@/components/social-nav'
+import SocialNav from '@/components/social-nav'
 import { useMotionValueEvent, useScroll } from 'framer-motion'
 import { cn } from '@/lib/utils'
-import { contactEmail, siteConfig, siteNav } from '@/config/site'
+import { contactEmail, siteConfig, siteNav, whatsappUrl } from '@/config/site'
 
 export default function SiteHeader () {
   const { scrollY } = useScroll()

@@ -31,6 +31,8 @@ export const contactEmail = `contacto@${domain}`
 
 export const contactPhone = '4461012245'
 
+export const whatsappUrl = `https://wa.me/1${contactPhone}`
+
 export const social: NavList = [
   {
     title: 'Facebook',
@@ -50,7 +52,7 @@ export const social: NavList = [
   },
   {
     title: 'Whatsapp',
-    href: `https://wa.me/1${contactPhone}`
+    href: whatsappUrl
   }
 ]
 
