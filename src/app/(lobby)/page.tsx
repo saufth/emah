@@ -123,8 +123,7 @@ export default function IndexPage () {
           <div className='cols-container gap-y-gutter mt-spacing-6'>
             {services.map((item, key) => (
               <ServiceCard className='w-6-cols sm:w-8-cols lg:w-4-cols' card={item} key={key} />
-            )
-            )}
+            ))}
           </div>
         </div>
         <div className='container-sm mt-spacing-6'>
