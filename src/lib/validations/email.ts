@@ -1,6 +1,13 @@
 import * as z from 'zod'
-import { limitsErrorMessage } from '@/lib/utils'
-import { type Limits } from '@/types'
+
+interface Limits {
+  min: number
+  max: number
+}
+
+const limitsErrorMessage = ({ min, max }: Limits) => {
+  return `Debe tener de ${min} a ${max} caracteres`
+}
 
 const nameLimits: Limits = { min: 6, max: 80 }
 const nameLimitsErrorMessage = limitsErrorMessage(nameLimits)

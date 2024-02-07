@@ -1,7 +1,6 @@
 import { clsx, type ClassValue } from 'clsx'
 import { twMerge } from 'tailwind-merge'
 import {
-  type Limits,
   type DocumentElementWithFullscreen,
   type DocumentWithFullscreen
 } from '@/types'
@@ -18,12 +17,12 @@ export function slugify (str: string) {
     .replace(/--+/g, '-')
 }
 
+export const capitalize = (text: string): string => (
+  `${text.charAt(0).toUpperCase()}${text.slice(1).toLowerCase()}`
+)
+
 export function absoluteUrl (path: string = '/') {
   return `${process.env.NEXT_PUBLIC_APP_URL}${path}`
-}
-
-export function limitsErrorMessage ({ min, max }: Limits) {
-  return `Debe tener de ${min} a ${max} caracteres`
 }
 
 export function isFullScreen (): boolean {

@@ -1,34 +1,50 @@
 import NextLink from 'next/link'
 import { Icons } from '@/components/icons'
+import { capitalize } from '@/lib/utils'
 import { social } from '@/config/site'
 
 export const socialIcons = [
-  () => <Icons.Facebook className='w-7 h-7' />,
-  () => <Icons.Instagram className='w-7 h-7' />,
-  () => <Icons.TikTok className='w-7 h-7' />,
-  () => <Icons.Linkedin className='w-7 h-7' />,
-  () => <Icons.Whatsapp className='w-[22px] h-[22px]' />
+  {
+    title: 'facebook',
+    Icon: () => <Icons.Facebook className='w-7 h-7' />
+  },
+  {
+    title: 'instagram',
+    Icon: () => <Icons.Instagram className='w-7 h-7' />
+  },
+  {
+    title: 'tiktok',
+    Icon: () => <Icons.TikTok className='w-7 h-7' />
+  },
+  {
+    title: 'linkedin',
+    Icon: () => <Icons.Linkedin className='w-7 h-7' />
+  },
+  {
+    title: 'whatsapp',
+    Icon: () => <Icons.Whatsapp className='w-[22px] h-[22px]' />
+  }
 ]
-
-const socialConfig = social.map((item, index) => ({
-  ...item,
-  Icon: socialIcons[index]!
-}))
 
 const SocialNav = () => {
   return (
     <ul className='flex gap-x-3 items-center'>
-      {socialConfig.map((socialItem, key) => {
+      {social.map((socialItem, key) => {
+        const socialIcon = socialIcons.find((socialIcon) => socialIcon.title === socialItem.title)
+        const socialTitle = capitalize(socialItem.title)
+
         return (
           <li key={key}>
             <NextLink
               href={socialItem.href}
-              aria-label={socialItem.title}
+              aria-label={socialTitle}
               target='_blank'
               rel='nooponer noreferrer'
             >
-              <socialItem.Icon />
-              <span className='sr-only'>{socialItem.title}</span>
+              {socialIcon
+                ? <socialIcon.Icon />
+                : <Icons.ArrowUpRight className='w-7 h-7' />}
+              <span className='sr-only'>{socialTitle}</span>
             </NextLink>
           </li>
         )

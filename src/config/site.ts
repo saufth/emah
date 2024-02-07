@@ -1,12 +1,21 @@
 import { type Author } from 'next/dist/lib/metadata/types/metadata-types'
-import { type NavList, type Navigable, type SiteConfig } from '@/types'
+import { type NavItem, type MainNavItem } from '@/types'
+
+interface SiteConfig {
+  name: string,
+  description: string,
+  slogan?: string,
+  url: URL | string,
+  author: Author,
+  mainNav: MainNavItem[]
+}
 
 export const author: Author = {
   name: 'saufth',
   url: 'https://github.com/saufth'
 }
 
-export const siteNav: Navigable = [
+export const siteNav: MainNavItem[] = [
   {
     title: 'Nuestras soluciones',
     href: '/soluciones'
@@ -33,25 +42,25 @@ export const contactPhone = '4461012245'
 
 export const whatsappUrl = `https://wa.me/1${contactPhone}`
 
-export const social: NavList = [
+export const social: NavItem[] = [
   {
-    title: 'Facebook',
+    title: 'facebook',
     href: 'https://www.facebook.com/emahmx?mibextid=LQQJ4d'
   },
   {
-    title: 'Instagram',
+    title: 'instagram',
     href: 'https://instagram.com/emah.mx?igshid=YmMyMTA2M2Y='
   },
   {
-    title: 'TikTok',
+    title: 'tiktok',
     href: 'https://www.tiktok.com/@emahmarketing?_t=8ZWM4WdpXB0&_r=1'
   },
   {
-    title: 'Linkedin',
+    title: 'linkedin',
     href: 'https://www.linkedin.com/in/emah-marketing-b58604264'
   },
   {
-    title: 'Whatsapp',
+    title: 'whatsapp',
     href: whatsappUrl
   }
 ]
