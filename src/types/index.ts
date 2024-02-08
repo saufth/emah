@@ -33,6 +33,10 @@ export interface NavItem extends Title {
   href: string
 }
 
+export interface Nav {
+  items: NavItem[]
+}
+
 export interface NavItemWithChildren extends NavItem {
   items: NavItemWithChildren[]
 }

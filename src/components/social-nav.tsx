@@ -1,7 +1,7 @@
 import NextLink from 'next/link'
 import { Icons } from '@/components/icons'
 import { capitalize } from '@/lib/utils'
-import { social } from '@/config/site'
+import { type Nav } from '@/types'
 
 export const socialIcons = [
   {
@@ -26,10 +26,10 @@ export const socialIcons = [
   }
 ]
 
-const SocialNav = () => {
+const SocialNav = ({ items }: Nav) => {
   return (
     <ul className='flex gap-x-3 items-center'>
-      {social.map((socialItem, key) => {
+      {items.map((socialItem, key) => {
         const socialIcon = socialIcons.find((socialIcon) => socialIcon.title === socialItem.title)
         const socialTitle = capitalize(socialItem.title)
 

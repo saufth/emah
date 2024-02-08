@@ -8,7 +8,7 @@ import { ModeToggle } from './mode-toggle'
 import SocialNav from '@/components/social-nav'
 import { useMotionValueEvent, useScroll } from 'framer-motion'
 import { cn } from '@/lib/utils'
-import { contactEmail, siteConfig, siteNav, whatsappUrl } from '@/config/site'
+import { contactEmail, siteConfig, siteNav, socialNav, whatsappUrl } from '@/config/site'
 
 export default function SiteHeader () {
   const { scrollY } = useScroll()
@@ -102,7 +102,7 @@ export default function SiteHeader () {
               {contactEmail}
             </Link>
             <div className='mt-spacing-5'>
-              <SocialNav />
+              <SocialNav items={socialNav} />
             </div>
           </div>
           <div>

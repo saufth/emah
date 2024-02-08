@@ -42,7 +42,7 @@ export const contactPhone = '4461012245'
 
 export const whatsappUrl = `https://wa.me/1${contactPhone}`
 
-export const social: NavItem[] = [
+export const socialNav: NavItem[] = [
   {
     title: 'facebook',
     href: 'https://www.facebook.com/emahmx?mibextid=LQQJ4d'

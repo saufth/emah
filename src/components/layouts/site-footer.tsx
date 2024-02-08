@@ -3,7 +3,7 @@ import { CallToAction } from '@/components/call-to-action'
 import { Icons } from '@/components/icons'
 import { Link } from '@/components/ui/link'
 import SocialNav from '@/components/social-nav'
-import { contactEmail, siteConfig, siteNav } from '@/config/site'
+import { contactEmail, siteConfig, siteNav, socialNav } from '@/config/site'
 
 export default function SiteFooter () {
   return (
@@ -43,7 +43,7 @@ export default function SiteFooter () {
             {contactEmail}
           </Link>
           <div className='mt-spacing-4'>
-            <SocialNav />
+            <SocialNav items={socialNav} />
           </div>
         </div>
       </div>
