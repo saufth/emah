@@ -1,5 +1,6 @@
 import React from 'react'
 import { cn } from '@/lib/utils'
+import { type ItemWithOptionalImage } from '@/types'
 
 const Card = React.forwardRef<
   HTMLDivElement,
@@ -31,6 +32,9 @@ const CardHeader = React.forwardRef<
 CardHeader.displayName = 'CardHeader'
 
 type CardProps = React.ComponentProps<typeof Card>
+interface CardDataProps extends CardProps {
+  card: ItemWithOptionalImage
+}
 
 const CardTitle = React.forwardRef<
   HTMLParagraphElement,
@@ -95,5 +99,6 @@ export {
   type CardTitleProps,
   type CardDescriptionProps,
   type CardContentProps,
-  type CardFooterProps
+  type CardFooterProps,
+  type CardDataProps
 }
