@@ -32,6 +32,7 @@ const CardHeader = React.forwardRef<
 CardHeader.displayName = 'CardHeader'
 
 type CardProps = React.ComponentProps<typeof Card>
+
 interface CardDataProps extends CardProps {
   card: ItemWithOptionalImage
 }
