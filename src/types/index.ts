@@ -75,6 +75,7 @@ export interface DocumentWithFullscreen extends Document {
   mozCancelFullScreen?: () => void;
   webkitExitFullscreen?: () => void;
 }
+
 export interface DocumentElementWithFullscreen extends HTMLElement {
   msRequestFullscreen?: () => void;
   mozRequestFullScreen?: () => void;
