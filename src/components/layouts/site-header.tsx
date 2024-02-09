@@ -75,15 +75,15 @@ export default function SiteHeader () {
       </header>
       <div
         className={cn(
-          'w-full h-0 bg-background fixed flex flex-col justify-between top-0 left-0 z-30 overflow-hidden transition-[height] duration-300',
+          'w-full h-0 bg-background/90 backdrop-filter backdrop-blur-md fixed flex flex-col justify-between top-0 left-0 z-30 overflow-hidden transition-[height] duration-300',
           isMenuOpen && 'h-[100dvh]'
         )}
       >
         <ul className='container mt-spacing-8'>
           {siteNav.map((navItem, key) => (
-            <li key={key}>
+            <li key={key} className='border-b-[1.5px] first:border-t-[1.5px]'>
               <Link
-                className='flex justify-between text-lg rounded-none w-full px-0 py-2.5 sm:py-2.5 border-b first:border-t'
+                className='flex justify-between text-lg rounded-none w-full px-0 py-2.5 sm:py-2.5'
                 href={navItem.href}
                 onClick={() => setIsMenuOpen(false)}
               >
