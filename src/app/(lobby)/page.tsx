@@ -4,8 +4,8 @@ import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { Icons } from '@/components/icons'
 import { SimpleCard } from '@/components/cards/simple-card'
 import { ServiceCard } from '@/components/cards/service-card'
+import FloatingVideo from '@/components/floating-video'
 import Meteors from '@/components/meteors'
-import Video from '@/components/cards/video-card'
 import { cn } from '@/lib/utils'
 import { benefist, howWeMake } from '@/config/organization'
 import { services } from '@/config/services'
@@ -138,7 +138,7 @@ export default function IndexPage () {
           </div>
         </div>
       </section>
-      <Video />
+      <FloatingVideo src='/video/emah.mp4' />
     </>
   )
 }

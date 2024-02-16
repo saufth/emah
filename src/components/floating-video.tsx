@@ -2,8 +2,9 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
 import { isFullScreen, requestFullScreen } from '@/lib/utils'
+import { type BackgroundVideoProps } from '@/components/background-video'
 
-export default function Video () {
+export default function FloatingVideo ({ src }: BackgroundVideoProps) {
   const [isVideo, setIsVideo] = React.useState<boolean>(true)
   const videoRef = React.useRef<HTMLVideoElement>(null)
 
@@ -52,7 +53,7 @@ export default function Video () {
             onContextMenu={preventContextMenu}
             ref={videoRef}
           >
-            <source src='/video/emah.mp4' type='video/mp4' />
+            <source src={src} type='video/mp4' />
           </video>
           <div className='w-full p-3 lg:absolute bottom-0 left-0 flex justify-end items-center gap-x-2'>
             <Button size='xs' variant='link' className='lg:text-white' onClick={handleDimissVideo}>

@@ -1,7 +1,7 @@
 'use client'
 import { useRef, type MouseEvent } from 'react'
 
-interface BackgroundVideoProps {
+export interface BackgroundVideoProps {
   src: string
 }
 
