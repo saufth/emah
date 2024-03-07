@@ -17,7 +17,7 @@ export function ServiceCard ({ card, className, ...props }: CardDataProps) {
       )}
       {...props}
     >
-      <div className='w-full h-full rounded-lg bg-gradient-to-t from-zinc-50 to-card dark:from-zinc-950 dark:to-muted pt-12 pb-16 px-8 sm:px-6 sm:pt-14 sm:pb-20'>
+      <div className='w-full h-full rounded-lg bg-gradient-to-t from-zinc-50 to-card dark:from-zinc-950 dark:to-muted py-12 px-8 sm:px-6 sm:py-14'>
         <div>
           <CardHeader className='space-y-1.5 sm:space-y-2 lg:space-y-2'>
             <h3 className='f-heading-3 font-bold'>
@@ -29,7 +29,7 @@ export function ServiceCard ({ card, className, ...props }: CardDataProps) {
               ? (
                 <div className='flex items-center gap-x-2'>
                   <Icons.Doodle className='w-5 h-5 fill-emah' />
-                  <p className='f-subhead-3 font-semibold text-muted-foreground'>
+                  <p className='f-subhead-3 font-semibold'>
                     {card.items}
                   </p>
                 </div>
@@ -41,7 +41,7 @@ export function ServiceCard ({ card, className, ...props }: CardDataProps) {
                       <div className=''>
                         <Icons.Doodle className='w-5 h-5 fill-emah' />
                       </div>
-                      <p className='f-subhead-3 font-semibold text-muted-foreground'>
+                      <p className='f-subhead-3 font-semibold'>
                         {item}
                       </p>
                     </li>
