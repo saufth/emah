@@ -45,9 +45,9 @@ export default function AboutPage () {
             </span>
           </h2>
           <p className='f-subhead-2 text-muted-foreground text-balanced mt-spacing-3'>
-            El éxito a corto, mediano y largo plazo de cualquier empresa, no depende de un solo aspecto, sino de la
+            El <b>éxito a corto, mediano y largo plazo</b> de cualquier empresa, no depende de un solo aspecto, sino de la
             sincronización de muchos. Aquí te presentamos los más importantes para nosotros, mismos que forman parte
-            de nuestro ADN y que son la clave en la generación de <b>soluciones de valor para nuestros clientes</b>.
+            de nuestro <b>ADN</b> y que son la clave en la generación de <b>soluciones de valor para nuestros clientes</b>.
           </p>
         </div>
         <div className='cols-container gap-y-gutter mt-spacing-6'>
@@ -58,7 +58,8 @@ export default function AboutPage () {
         </div>
         <div className='container-sm mt-spacing-6'>
           <div className='f-subhead-2 text-muted-foreground text-center text-balanced'>
-            <b>Anti-Marketing</b> propone que un producto o servicio que realmente resuelva un problema de raíz y un branding dinámico es suficiente para <b>aportar valor</b> y asegurar la rentabilidad a largo plazo.
+            Nos apasiona crear <b>posibilidades infinitas</b> que <b>generen valor a sus modelos de negocio</b> para que,
+            día con día, se vuelvan más competitivos y evolutivos al transcurso de las generaciones.
           </div>
           <div className='w-full justify-center mt-spacing-5 flex flex-col sm:flex-row gap-4'>
             <CallToAction />
