@@ -3,12 +3,11 @@ import Image from 'next/image'
 import { CallToAction, CallToServices } from '@/components/call-to-action'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { filosophy, history } from '@/config/organization'
-import { siteConfig } from '@/config/site'
 
 export const metadata: Metadata = {
   metadataBase: new URL(String(process.env.NEXT_PUBLIC_APP_URL)),
   title: 'Razón de ser',
-  description: siteConfig.description
+  description: 'Generamos estrategias 100% enfocadas en las necesidades reales del cliente'
 }
 
 export default function ReazonPage () {
@@ -130,7 +129,7 @@ export default function ReazonPage () {
         ))}
         <div className='w-full justify-center mt-spacing-5 flex flex-col sm:flex-row gap-4'>
           <CallToAction />
-          <CallToServices />
+          {/* <CallToServices /> */}
         </div>
       </section>
     </>
