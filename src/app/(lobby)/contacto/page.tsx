@@ -4,7 +4,7 @@ import ContactForm from '@/components/forms/contact-form'
 import { siteConfig } from '@/config/site'
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
+  metadataBase: new URL(String(process.env.NEXT_PUBLIC_APP_URL)),
   title: 'Contáctanos',
   description: siteConfig.description
 }

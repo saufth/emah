@@ -1,5 +1,5 @@
 import { Badge } from '@/components/ui/badge'
-import { CallToAction, CallToAbout, CallToServices, CallToPurpose } from '@/components/call-to-action'
+import { CallToAction, CallToAbout, CallToPurpose } from '@/components/call-to-action'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { Icons } from '@/components/icons'
 import { SimpleCard } from '@/components/cards/simple-card'
@@ -18,8 +18,8 @@ export default function IndexPage () {
           <div className='container-sm mx-auto flex flex-col items-center gap-y-8'>
             <Badge className='mt-spacing-6' variant='secondary'>
               <div className='flex gap-x-1 items-center'>
-                <span className='text-emah text-sm lg:text-base lg:font-medium'>
-                  <span>-mkt</span>+hacks<span> =</span>
+                <span className='text-emah text-sm lg:text-lg lg:font-medium'>
+                  <span>mkt</span>+stratgy<span> =</span>
                 </span>
                 <Icons.Proposal className='w-4 lg:w-5 h-auto fill-emah' />
               </div>
@@ -29,7 +29,7 @@ export default function IndexPage () {
                 <span className='relative'>
                   <Icons.Doodle className='w-auto h-20 sm:h-28 lg:h-32 fill-emah absolute top-1 lg:top-2 my-auto -left-9 sm:-left-16 lg:-left-16 -z-10' />
                   <span className='text-gradient'>
-                    No necesitas más marketing
+                    Hacemos marketing estratégico
                   </span>
                 </span>
               </h1>
@@ -111,13 +111,11 @@ export default function IndexPage () {
           <div className='text-center'>
             <h2 className='text-balanced'>
               <span className='f-heading-1 font-bold text-gradient'>
-                Planes a la medida de tus necesidades
+                Nuestras soluciones
               </span>
             </h2>
             <p className='mx-auto f-subhead-2 text-muted-foreground text-balanced mt-spacing-4'>
-              El <b>anti-marketing</b> es el marketing que pone al <b>cliente en primer lugar</b>.
-              En lugar de gastar dinero en publicidad, se enfoca en crear productos y servicios
-              que tus clientes quieran compartir con sus amigos y familiares.
+              Los <b>mejores resultados</b> se logran cuando la ejecución del branding y el marketing empujan hacia el mismo destino.
             </p>
           </div>
           <div className='cols-container gap-y-gutter mt-spacing-6'>
@@ -134,7 +132,6 @@ export default function IndexPage () {
           </div>
           <div className='w-full justify-center mt-spacing-5 flex flex-col sm:flex-row gap-4'>
             <CallToAction />
-            <CallToServices />
           </div>
         </div>
       </section>

@@ -8,7 +8,7 @@ import { ModeToggle } from './mode-toggle'
 import SocialNav from '@/components/social-nav'
 import { useMotionValueEvent, useScroll } from 'framer-motion'
 import { cn } from '@/lib/utils'
-import { contactEmail, siteConfig, siteNav, socialNav, whatsappUrl } from '@/config/site'
+import { contactEmail, siteConfig, socialNav, whatsappUrl } from '@/config/site'
 
 export default function SiteHeader () {
   const { scrollY } = useScroll()
@@ -44,8 +44,8 @@ export default function SiteHeader () {
               <div className='flex items-center gap-x-5'>
                 <div className='hidden lg:flex items-center gap-x-5'>
                   <ul className='flex items-center gap-x-5'>
-                    {siteNav.map((navItem, key) => (
-                      <li key={key} className='last:hidden'>
+                    {siteConfig.mainNav.map((navItem, key) => (
+                      <li key={key} className='last:hidden first:hidden'>
                         <Link href={navItem.href} className='hidden lg:flex px-1 font-semibold' variant='link'>
                           {navItem.title}
                         </Link>
@@ -80,7 +80,7 @@ export default function SiteHeader () {
         )}
       >
         <ul className='container mt-spacing-8'>
-          {siteNav.map((navItem, key) => (
+          {siteConfig.mainNav.map((navItem, key) => (
             <li key={key} className='border-b-[1.5px] first:border-t-[1.5px]'>
               <Link
                 className='flex justify-between text-lg rounded-none w-full px-0 py-2.5 sm:py-2.5'
