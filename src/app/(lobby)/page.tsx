@@ -80,7 +80,7 @@ export default function IndexPage () {
               )
             })}
           </div>
-          <div className='cols-container gap-y-gutter mt-gutter'>
+          {/* <div className='cols-container gap-y-gutter mt-gutter'>
             {benefist.map((item, key) => (
               <SimpleCard className='w-6-cols sm:w-1/3-cols lg:w-4-cols' card={item} key={key} />
             ))}
@@ -97,7 +97,7 @@ export default function IndexPage () {
                 </CardHeader>
               </div>
             </Card>
-          </div>
+          </div> */}
           <div className='w-full justify-center mt-spacing-5 flex flex-col sm:flex-row gap-4'>
             <CallToAction />
             <CallToPurpose />
