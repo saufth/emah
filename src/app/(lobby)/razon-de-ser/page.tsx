@@ -1,6 +1,6 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
-import { CallToAction, CallToServices } from '@/components/call-to-action'
+import { CallToAction } from '@/components/call-to-action'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { filosophy, history } from '@/config/organization'
 
