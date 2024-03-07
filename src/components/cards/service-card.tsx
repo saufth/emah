@@ -51,7 +51,7 @@ export function ServiceCard ({ card, className, ...props }: CardDataProps) {
           </CardContent>
         </div>
         <div>
-          <p className='f-body-1 text-balanced pt-8 sm:pt-12 text-center text-muted-foreground'>
+          <p className='f-body-1 text-balanced pt-8 sm:pt-12 text-center'>
             {card.description}
           </p>
         </div>
