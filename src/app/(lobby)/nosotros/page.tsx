@@ -23,6 +23,10 @@ export default function AboutPage () {
                 {aboutHeading}
               </span>
             </h1>
+            <p className='f-subhead-1 text-muted-foreground text-balanced mt-spacing-4'>
+              Nuestro ideal es convertirnos en un <b>aliado estratégico</b> y determinante
+              en el <b>éxito trascendente de nuestros clientes y socios</b>.
+            </p>
           </div>
         </div>
         <div className='full-bleed-container mt-spacing-7'>

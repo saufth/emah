@@ -34,7 +34,8 @@ export default function IndexPage () {
                 </span>
               </h1>
               <p className='f-subhead-1 text-muted-foreground text-balanced mt-spacing-4'>
-                <b>Impulsamos a emprendedores y empresarios</b> a consolidar su modelo de negocio, ofreciendo <b>productos intangibles de alto valor agregado</b> para sus clientes.
+                <b>Impulsamos a emprendedores y empresarios</b> a consolidar su modelo de negocio,
+                ofreciendo <b>productos intangibles de alto valor agregado</b> para sus clientes.
               </p>
             </div>
             <div className='w-full justify-center mt-2 sm:mt-4 flex flex-col sm:flex-row gap-4'>
