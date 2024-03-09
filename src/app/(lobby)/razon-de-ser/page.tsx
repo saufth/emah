@@ -1,8 +1,7 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
 import { CallToAction } from '@/components/call-to-action'
-import { Card, CardContent, CardHeader } from '@/components/ui/card'
-import { filosophy, history } from '@/config/organization'
+import { history } from '@/config/organization'
 
 export const metadata: Metadata = {
   metadataBase: new URL(String(process.env.NEXT_PUBLIC_APP_URL)),
@@ -35,7 +34,7 @@ export default function ReazonPage () {
           />
         </div>
       </section>
-      <section className='container-sm mt-spacing-7'>
+      {/* <section className='container-sm mt-spacing-7'>
         <div className='text-center'>
           <h2>
             <span className='f-heading-1 font-bold text-gradient'>
@@ -79,7 +78,7 @@ export default function ReazonPage () {
           )
           )}
         </div>
-      </section>
+      </section> */}
       <section className='container-sm mt-spacing-7 space-y-8'>
         <div className='space-y-5'>
           <h2 className='f-heading-1'>
