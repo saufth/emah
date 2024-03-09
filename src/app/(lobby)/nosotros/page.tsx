@@ -9,7 +9,7 @@ const aboutHeading = 'Un legado de progreso para el mundo y futuras generaciones
 export const metadata: Metadata = {
   metadataBase: new URL(String(process.env.NEXT_PUBLIC_APP_URL)),
   title: 'Nosotros',
-  description: aboutHeading
+  description: 'Nuestro ideal es convertirnos en un aliado estratégico y determinante en el éxito trascendente de nuestros clientes y socios'
 }
 
 export default function AboutPage () {
