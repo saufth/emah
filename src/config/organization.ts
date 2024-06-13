@@ -152,6 +152,18 @@ export const culture: HeadingWithImage[] = [
       src: '/images/culture2.webp',
       alt: 'Transformamos problemas en oportunidades'
     }
+  },
+  {
+    title: 'Trabajamos de adentro hacia afuera',
+    description: [
+      'Bien por dentro = Bien por fuera.',
+      'La única forma de generar un verdadero desarrollo o crecimiento autosustentable a corto, mediano y largo plazo en cualquier empresa es trabajar desde adentro con cada uno de los integrantes de su equipo.',
+      'Buscamos constantemente generar mejoras en nosotros mismos que se vean reflejadas en nuestro corporativo empresarial y por ende en el bienestar y satisfacción de nuestros clientes.'
+    ],
+    image: {
+      src: '/images/culture8.webp',
+      alt: 'Trabajamos de adentro hacia afuera'
+    }
   }
 ]
 
