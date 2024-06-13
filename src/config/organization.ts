@@ -86,96 +86,96 @@ export const filosophy: Heading[] = [
 ]
 
 export const culture: HeadingWithImage[] = [
-    {
-      title: 'Trabajamos en equipo',
-      description: [
-        'Los negocios son opuestos a las matemáticas. Mientras las matemáticas plantean que la mejor forma de sumar es multiplicar, en los negocios la mejor forma de sumar es dividir. Dividir el esfuerzo, el trabajo, las tareas y hasta los ingresos.',
-        'Más allá de querer ser un experto en todas las áreas de una empresa o negocio, busca rodearte de un equipo de expertos que complemente correctamente las habilidades y conocimientos que no tienes.'
-      ],
-      image: {
-        src: '/images/culture1.webp',
-        alt: 'Trabajamos en equipo'
-      }
-    },
-    {
-      title: 'Transformamos problemas en oportunidades',
-      description: [
-        'Problemas = áreas de oportunidad.',
-        'Mientras más grande y frecuente sea el problema, mayor será la posibilidad de generar valor.'
-      ],
-      image: {
-        src: '/images/culture2.webp',
-        alt: 'Transformamos problemas en oportunidades'
-      }
-    },
-    {
-      title: 'No asumimos',
-      description: [
-        'Se debe tener certeza en cada tarea u objetivo a realizar. Nunca asumir, en caso de no tener plena certeza.',
-        'Evitar el retrabajo dando indicaciones claras asegura que las cosas se hagan bien a la primera.',
-        'Cualquier duda, pregunta o sugerencia de nuestros clientes y colaboradores es siempre bienvenida.'
-      ],
-      image: {
-        src: '/images/culture3.webp',
-        alt: 'No asumimos'
-      }
-    },
-    {
-      title: 'Planeamos y ejecutamos con estrategia y táctica',
-      description: [
-        'En cada tarea u objetivo analizamos y elegimos la estrategia y táctica correcta que nos permita llegar del punto A (en donde estamos) al punto B (a donde se quiere llegar) de una forma eficiente y eficaz.',
-        'Siempre hay una forma óptima o mejor de lograr los objetivos.'
-      ],
-      image: {
-        src: '/images/culture4.webp',
-        alt: 'Planeamos y ejecutamos con estrategia'
-      }
-    },
-    {
-      title: 'Prevenimos futuras tendencias',
-      description: [
-        'Saber prever o anticipar cuando entrar y salir de cualquier oportunidad de negocio. Nada es eterno; todo tiene un ciclo, un punto alto y un punto bajo.',
-        'Lo único constante es el cambio.'
-      ],
-      image: {
-        src: '/images/culture5.webp',
-        alt: 'Prevenimos futuras tendencias'
-      }
-    },
-    {
-      title: 'Innovamos constantemente',
-      description: [
-        'Lo importante es generar innovación alrededor de lo que el cliente considera valioso.',
-        'Para lograr generar innovaciones de valor, es imperativo conocer al cliente, a la competencia, al mercado y a ti mismo como organización.'
-      ],
-      image: {
-        src: '/images/culture6.webp',
-        alt: 'Innovamos constantemente'
-      }
-    },
-    {
-      title: 'Buscamos progreso, no perfección',
-      description: [
-        'El mundo de los negocios es un juego infinito en el que no se tiene una certeza plena de todos los elementos que participan en el mercado, ni de la variabilidad de estos. A lo máximo que se puede aspirar es a tener estimaciones.'
-      ],
-      image: {
-        src: '/images/culture7.webp',
-        alt: 'Buscamos progreso, no perfección'
-      }
-    },
-    {
-      title: 'Trabajamos de adentro hacia afuera',
-      description: [
-        'Bien por dentro = Bien por fuera.',
-        'La única forma de generar un verdadero desarrollo o crecimiento autosustentable a corto, mediano y largo plazo en cualquier empresa es trabajar desde adentro con cada uno de los integrantes de su equipo.',
-        'Buscamos constantemente generar mejoras en nosotros mismos que se vean reflejadas en nuestro corporativo empresarial y por ende en el bienestar y satisfacción de nuestros clientes.'
-      ],
-      image: {
-        src: '/images/culture8.webp',
-        alt: 'Trabajamos de adentro hacia afuera'
-      }
+  {
+    title: 'Trabajamos en equipo',
+    description: [
+      'Los negocios son opuestos a las matemáticas. Mientras las matemáticas plantean que la mejor forma de sumar es multiplicar, en los negocios la mejor forma de sumar es dividir. Dividir el esfuerzo, el trabajo, las tareas y hasta los ingresos.',
+      'Más allá de querer ser un experto en todas las áreas de una empresa o negocio, busca rodearte de un equipo de expertos que complemente correctamente las habilidades y conocimientos que no tienes.'
+    ],
+    image: {
+      src: '/images/culture1.webp',
+      alt: 'Trabajamos en equipo'
     }
-  ]
+  },
+  {
+    title: 'Transformamos problemas en oportunidades',
+    description: [
+      'Problemas = áreas de oportunidad.',
+      'Mientras más grande y frecuente sea el problema, mayor será la posibilidad de generar valor.'
+    ],
+    image: {
+      src: '/images/culture2.webp',
+      alt: 'Transformamos problemas en oportunidades'
+    }
+  },
+  {
+    title: 'No asumimos',
+    description: [
+      'Se debe tener certeza en cada tarea u objetivo a realizar. Nunca asumir, en caso de no tener plena certeza.',
+      'Evitar el retrabajo dando indicaciones claras asegura que las cosas se hagan bien a la primera.',
+      'Cualquier duda, pregunta o sugerencia de nuestros clientes y colaboradores es siempre bienvenida.'
+    ],
+    image: {
+      src: '/images/culture3.webp',
+      alt: 'No asumimos'
+    }
+  },
+  {
+    title: 'Planeamos y ejecutamos con estrategia y táctica',
+    description: [
+      'En cada tarea u objetivo analizamos y elegimos la estrategia y táctica correcta que nos permita llegar del punto A (en donde estamos) al punto B (a donde se quiere llegar) de una forma eficiente y eficaz.',
+      'Siempre hay una forma óptima o mejor de lograr los objetivos.'
+    ],
+    image: {
+      src: '/images/culture4.webp',
+      alt: 'Planeamos y ejecutamos con estrategia'
+    }
+  },
+  {
+    title: 'Prevenimos futuras tendencias',
+    description: [
+      'Saber prever o anticipar cuando entrar y salir de cualquier oportunidad de negocio. Nada es eterno; todo tiene un ciclo, un punto alto y un punto bajo.',
+      'Lo único constante es el cambio.'
+    ],
+    image: {
+      src: '/images/culture5.webp',
+      alt: 'Prevenimos futuras tendencias'
+    }
+  },
+  {
+    title: 'Innovamos constantemente',
+    description: [
+      'Lo importante es generar innovación alrededor de lo que el cliente considera valioso.',
+      'Para lograr generar innovaciones de valor, es imperativo conocer al cliente, a la competencia, al mercado y a ti mismo como organización.'
+    ],
+    image: {
+      src: '/images/culture6.webp',
+      alt: 'Innovamos constantemente'
+    }
+  },
+  {
+    title: 'Buscamos progreso, no perfección',
+    description: [
+      'El mundo de los negocios es un juego infinito en el que no se tiene una certeza plena de todos los elementos que participan en el mercado, ni de la variabilidad de estos. A lo máximo que se puede aspirar es a tener estimaciones.'
+    ],
+    image: {
+      src: '/images/culture7.webp',
+      alt: 'Buscamos progreso, no perfección'
+    }
+  },
+  {
+    title: 'Trabajamos de adentro hacia afuera',
+    description: [
+      'Bien por dentro = Bien por fuera.',
+      'La única forma de generar un verdadero desarrollo o crecimiento autosustentable a corto, mediano y largo plazo en cualquier empresa es trabajar desde adentro con cada uno de los integrantes de su equipo.',
+      'Buscamos constantemente generar mejoras en nosotros mismos que se vean reflejadas en nuestro corporativo empresarial y por ende en el bienestar y satisfacción de nuestros clientes.'
+    ],
+    image: {
+      src: '/images/culture8.webp',
+      alt: 'Trabajamos de adentro hacia afuera'
+    }
+  }
+]
 
 export const history: Section = {
   title: 'Nuestra razón de ser',
