@@ -121,14 +121,14 @@ export const culture: HeadingWithImage[] = [
     }
   },
   {
-    title: 'Inovamos constantemente',
+    title: 'Innovamos constantemente',
     description: [
       'Lo importante es generar innovación alrededor de lo que el cliente considera valioso.',
       'Para lograr generar innovaciones de valor, es imperativo conocer al cliente, a la competencia, al mercado y a ti mismo como organización.'
     ],
     image: {
       src: '/images/culture6.webp',
-      alt: 'Inovamos constantemente'
+      alt: 'Innovamos constantemente'
     }
   },
   {
